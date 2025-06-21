@@ -1,0 +1,4120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: Inter, -apple-system, Helvetica, Arial, sans-serif;
+            background-color: #f1f2f4;
+            color: #272019;
+        }
+
+
+
+        /*this is index page*/
+        .index_page {
+            float: left;
+            width: 100%;
+            height: 400px;
+        }
+
+        li::marker {
+            color: #c4c1c0;
+        }
+
+        /*this is nav bar*/
+        .nav_bar {
+            float: left;
+            height: 65px;
+            width: 100%;
+            background-color: #ffffff;
+        }
+
+        .logo_box {
+            float: left;
+            margin: 10px 0px 10px 55px;
+            width: 160px;
+            height: 35px;
+            font-style: italic;
+        }
+
+        .logo_img {
+            float: left;
+            height: 45px;
+            width: 160px;
+        }
+
+        .srch_img {
+            float: left;
+            margin: 7px 0px 7px 10px;
+        }
+
+        .nav_srchbox {
+            float: left;
+            width: 700px;
+            height: 40px;
+            margin: 13px 0px 13px 11.5px;
+            background-color: #f1f5ff;
+            border-radius: 5px;
+        }
+
+        .nav_srchbox_text {
+            float: left;
+            width: 300px;
+            margin: 11px 210px 11px 15px;
+            font-size: 14px;
+            color: #808080;
+            font-weight: lighter;
+        }
+
+        .nav_login {
+            float: left;
+            margin: 15px 0px 15px 35px;
+            width: 96px;
+            height: 35px;
+        }
+
+        .nav_ulogin_icon {
+            float: left;
+            margin: 7px 10px 7px 0px;
+        }
+
+        .nav_down_icon {
+            float: left;
+            margin: 12px 0px;
+        }
+
+        .navl_tex {
+            float: left;
+            margin: 8px 10px 8px 0px;
+
+        }
+
+        .nav_cart {
+            float: left;
+            margin: 15px 0px 15px 50px;
+            width: 65px;
+            height: 35px;
+        }
+
+        .nav_cart_icon {
+            float: left;
+            margin: 7px 10px 7px 0px;
+        }
+
+        .nav_cart_text {
+            float: left;
+            margin: 8px 0px 8px 0px;
+        }
+
+        .nav_bcmsellr {
+            float: left;
+            margin: 15px 0px 15px 50px;
+            width: 152px;
+            height: 35px;
+        }
+
+        .nav_bcmslr_text {
+            float: left;
+            margin: 8px 0px 8px 0px;
+        }
+
+        .nav_seller_icon {
+            float: left;
+            margin: 6px 10px 6px 0px;
+        }
+
+        .nav_dots {
+            float: left;
+            margin: 16px 50px;
+        }
+
+
+        /*this is collection box*/
+
+        .collection_box {
+            float: left;
+            margin: 10px 15px 10px 15px;
+            width: 1506px;
+            height: 130px;
+            background-color: white;
+        }
+
+        .collection_box1 {
+            float: left;
+            margin: 10px 0px 10px 430px;
+            width: 150px;
+            height: 110px;
+        }
+
+        .collection_box2,
+        .collection_box3,
+        .collection_box4 {
+            float: left;
+            margin: 10px 0px 10px 15px;
+            width: 150px;
+            height: 110px;
+        }
+
+        .collection_box4 {
+            margin-right: 430px;
+        }
+
+        .mob_img,
+        .fashion_img,
+        .elctrnics_img,
+        .furniture_img {
+            margin: 10px 42px 8px 42px;
+        }
+
+        .clb1_text,
+        .clb2_text,
+        .clb3_text,
+        .clb4_text {
+            margin: 0px;
+            background-color: white;
+            border: 0px;
+        }
+
+        /*this is fashion collection*/
+        .fashion_cllctn {
+            display: none;
+            float: left;
+            width: 183px;
+            height: 75px;
+            margin: 0px 50px 10px 37rem;
+            background-color: white;
+            text-align: center;
+        }
+
+        .fcllctn_text1,
+        .fcllctn_text2 {
+            float: left;
+            width: 50px;
+            height: 18px;
+            margin: 23px 0px 23px 19px;
+            padding: 6px 0px;
+            background-color: #2a55e4;
+            color: white;
+            border-radius: 2px;
+        }
+
+        .fcllctn_text2 {
+            width: 75px;
+        }
+
+        /*this is mobile page*/
+        .mobiles_page {
+            display: none;
+            float: left;
+            width: 100%;
+            height: 776px;
+        }
+
+        /*this is nav bar*/
+        .mp_nav_bar {
+            float: left;
+            height: 57px;
+            width: 100%;
+            background-color: #2873f0;
+            box-shadow: 0px 3px 0px -0.5px #d2d4d5;
+        }
+
+        .mp_logo_box {
+            float: left;
+            margin: 10px 0px 10px 198px;
+            width: 77px;
+            height: 35px;
+            font-style: italic;
+        }
+
+        .mp_logo_img {
+            float: left;
+            height: 21.5px;
+            width: 75.5px;
+        }
+
+        .mp_logo_text1 {
+            float: left;
+            height: 11px;
+            margin: 0px 0px;
+            font-size: 11px;
+            color: #f2f3f7;
+        }
+
+        .mp_logo_text2 {
+            float: left;
+            margin: 0px 2px;
+            font-weight: 600;
+            font-size: 11px;
+            color: #e5d71b;
+        }
+
+        .mp_logo_plus_img {
+            float: left;
+            width: 10px;
+            margin: 0px 0px 1px 0px;
+        }
+
+        .mp_nav_srchbox {
+            float: left;
+            width: 564px;
+            height: 36px;
+            margin: 10px 0px 10px 10.5px;
+            background-color: #f1f5ff;
+            border-radius: 1.5px;
+            box-shadow: 0px 1px 1px 1px #2468d7;
+        }
+
+        .mp_nav_srchbox_text {
+            float: left;
+            width: 300px;
+            margin: 9.5px 192px 9.5px 15px;
+            font-size: 14px;
+            color: #808080;
+            font-weight: lighter;
+        }
+
+        .mp_srch_icon {
+            float: left;
+            margin: 8px 13px 7px 23.5px;
+        }
+
+        .mp_nav_login {
+            float: left;
+            margin: 13px 0px 13px 37.5px;
+            width: 122.5px;
+            height: 30px;
+            background-color: white;
+            border-radius: 2px;
+            font-size: 15px;
+            box-shadow: 0px 0px 0px 1px #4a7fd4;
+        }
+
+        .mp_navl_tex {
+            float: left;
+            margin: 6.5px 41px 6.5px;
+            color: #2873f0;
+            font-weight: 600;
+
+        }
+
+        .mp_nav_bcmsellr {
+            float: left;
+            margin: 13px 0px 13px 40px;
+            width: 135px;
+            height: 30px;
+        }
+
+        .mp_nav_bcmslr_text {
+            float: left;
+            margin: 7px 0px 7px 0px;
+            color: white;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .mp_nav_more {
+            float: left;
+            margin: 12px 0px 14px 9.5px;
+            width: 70px;
+            height: 30px;
+        }
+
+        .mp_nav_more_text {
+            float: left;
+            margin: 8px 17px 8px;
+            color: white;
+            font-weight: 600;
+        }
+
+        .mp_nav_cart {
+            float: left;
+            margin: 16px 0px 16px 37px;
+            width: 65px;
+            height: 25px;
+        }
+
+        .cart_icon {
+            float: left;
+            margin: 4px 9px 4px 0px;
+        }
+
+        .mp_nav_cart_text {
+            float: left;
+            margin: 4px 0px 4px 0px;
+            color: white;
+            font-weight: 600;
+        }
+
+        /*this is mobile box*/
+        .mobile_box {
+            display: none;
+            float: left;
+            width: 77rem;
+            height: 855px;
+            outline: 1px solid #eff1f4;
+            margin: 10px 9rem 10px;
+            background-color: white;
+        }
+
+        /*this is mobile box 1*/
+        .mobile_box1 {
+            float: left;
+            width: 77rem;
+            height: 285px;
+            outline: 1px solid #eff1f4;
+        }
+
+        /*this is left side of mob box1*/
+        .mobile_box1_lside {
+            float: left;
+            width: 235px;
+            height: 270px;
+        }
+
+        .mob1_img_box {
+            float: left;
+            margin: 15px 0px;
+            width: 235px;
+            height: 215px;
+        }
+
+        .bestseller {
+            position: absolute;
+            width: 80px;
+            height: 15px;
+            background-color: #009f98;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 3px;
+            text-align: center;
+            padding: 3px;
+            margin: 0px 8px;
+        }
+
+        .mob1_img {
+            float: left;
+            margin: 8px 14px 8px 47px;
+            width: 150px;
+            height: 200px;
+        }
+
+        .mob1_like_icon {
+            float: left;
+        }
+
+        .mob1_compare {
+            float: left;
+            margin: 0px 0px 0px 20px;
+            height: 15px;
+            width: 115px;
+        }
+
+        .mob1_tick_box {
+            float: left;
+            outline: 1px solid #c9c9c9;
+            height: 15px;
+            width: 15px;
+        }
+
+        .mob1_compare_text {
+            float: left;
+            margin: 1px 7px;
+            font-size: 12px;
+        }
+
+        /*this is right side of mob box1*/
+        .mobile_box1_rside {
+            float: left;
+            width: 600px;
+            height: 270px;
+        }
+
+        .mob1_head {
+            float: left;
+            font-weight: 600;
+            margin: 15px 0px 5px 10px;
+        }
+
+        .mob1_rating_box {
+            float: left;
+            margin: 0px 250px 0px 10px;
+            width: 250px;
+            height: 18px;
+        }
+
+        .mob1_rstar {
+            float: left;
+            background-color: #388e3d;
+            width: 39.5px;
+            height: 18px;
+            border-radius: 3px;
+            margin: 0px 10px 0px 0px;
+            font-size: 12px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .mob1_rstar_word {
+            float: left;
+
+            margin: 2px 2px 2px 5px;
+        }
+
+        .mob1_rstar_icon {
+            float: left;
+            margin: 4px 1px 4px 1px;
+            width: 10px;
+        }
+
+        .mob1_rwords {
+            float: left;
+            margin: 2px 0px 2px 0px;
+            font-size: 12.5px;
+            color: #949591;
+            font-weight: 600;
+        }
+
+        /*this is detail box*/
+        .mob1_list {
+            float: left;
+            margin: 10px 10px 10px 10px;
+            width: 360px;
+            height: 300px;
+            font-size: 12.5px;
+
+            padding: 0px 0px 0px 14px;
+            line-height: 1.5;
+            font-size: 13px;
+        }
+
+        /*this is price box*/
+
+        .mobile1_box_price {
+            float: left;
+            margin: 15px 0px;
+            height: 215px;
+            width: 175px;
+        }
+
+        .mob1_bp_b1 {
+            float: left;
+            height: 30px;
+            width: 175px;
+        }
+
+        .mob1_bp_b1_price {
+            float: left;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .mob1_bp_b1_ficon {
+            float: left;
+            margin: 0px 10px;
+        }
+
+        .mob1_bp_dicsp {
+            float: left;
+            font-size: 14px;
+            text-decoration: line-through;
+            color: #9ba0a3;
+        }
+
+        .mob1_bp_dics {
+            float: left;
+            font-size: 14px;
+            margin: 0px 5px;
+            color: #388d3d;
+        }
+
+        /*this is mobile box 2*/
+        .mobile_box2 {
+            float: left;
+            width: 77rem;
+            height: 285px;
+            outline: 1px solid #eff1f4;
+        }
+
+        /*this is left side of mob box2*/
+        .mobile_box2_lside {
+            float: left;
+            width: 235px;
+            height: 270px;
+        }
+
+        .mob2_img_box {
+            float: left;
+            margin: 15px 0px;
+            width: 235px;
+            height: 215px;
+        }
+
+        .mob2_img {
+            float: left;
+            margin: 8px 14px 8px 47px;
+            width: 150px;
+            height: 200px;
+        }
+
+        .mob2_like_icon {
+            float: left;
+        }
+
+        .mob2_compare {
+            float: left;
+            margin: 0px 0px 0px 20px;
+            height: 15px;
+            width: 115px;
+        }
+
+        .mob2_tick_box {
+            float: left;
+            outline: 1px solid #c9c9c9;
+            height: 15px;
+            width: 15px;
+        }
+
+        .mob2_compare_text {
+            float: left;
+            margin: 1px 7px;
+            font-size: 12px;
+        }
+
+        /*this is right side of mob box1*/
+        .mobile_box2_rside {
+            float: left;
+            width: 600px;
+            height: 270px;
+        }
+
+        .mob2_head {
+            float: left;
+            font-weight: 600;
+            margin: 15px 0px 5px 10px;
+        }
+
+        .mob2_rating_box {
+            float: left;
+            margin: 0px 250px 0px 10px;
+            width: 250px;
+            height: 18px;
+        }
+
+        .mob2_rstar {
+            float: left;
+            background-color: #388e3d;
+            width: 39.5px;
+            height: 18px;
+            border-radius: 3px;
+            margin: 0px 10px 0px 0px;
+            font-size: 12px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .mob2_rstar_word {
+            float: left;
+
+            margin: 2px 2px 2px 5px;
+        }
+
+        .mob2_rstar_icon {
+            float: left;
+            margin: 4px 1px 4px 1px;
+            width: 10px;
+        }
+
+        .mob2_rwords {
+            float: left;
+            margin: 2px 0px 2px 0px;
+            font-size: 12.5px;
+            color: #949591;
+            font-weight: 600;
+        }
+
+        /*this is detail box*/
+        .mob2_list {
+            float: left;
+            margin: 10px 10px 10px 10px;
+            width: 360px;
+            height: 300px;
+            font-size: 12.5px;
+
+            padding: 0px 0px 0px 14px;
+            line-height: 1.5;
+            font-size: 13px;
+        }
+
+        /*this is price box*/
+
+        .mobile2_box_price {
+            float: left;
+            margin: 15px 0px;
+            height: 215px;
+            width: 175px;
+        }
+
+        .mob2_bp_b1 {
+            float: left;
+            height: 30px;
+            width: 175px;
+        }
+
+        .mob2_bp_b1_price {
+            float: left;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .mob2_bp_b1_ficon {
+            float: left;
+            margin: 0px 10px;
+        }
+
+        .mob2_bp_dicsp {
+            float: left;
+            font-size: 14px;
+            text-decoration: line-through;
+            color: #9ba0a3;
+        }
+
+        .mob2_bp_dics {
+            float: left;
+            font-size: 14px;
+            margin: 0px 5px;
+            color: #388d3d;
+        }
+
+
+        /*this is mobile box 3*/
+        .mobile_box3 {
+            float: left;
+            width: 77rem;
+            height: 285px;
+            outline: 1px solid #eff1f4;
+        }
+
+        /*this is left side of mob box3*/
+        .mobile_box3_lside {
+            float: left;
+            width: 235px;
+            height: 270px;
+        }
+
+        .mob3_img_box {
+            float: left;
+            margin: 15px 0px;
+            width: 235px;
+            height: 215px;
+        }
+
+        .bestseller {
+            position: absolute;
+            width: 80px;
+            height: 15px;
+            background-color: #009f98;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 3px;
+            text-align: center;
+            padding: 3px;
+            margin: 0px 8px;
+        }
+
+        .mob3_img {
+            float: left;
+            margin: 8px 14px 8px 47px;
+            width: 150px;
+            height: 200px;
+        }
+
+        .mob3_like_icon {
+            float: left;
+        }
+
+        .mob3_compare {
+            float: left;
+            margin: 0px 0px 0px 20px;
+            height: 15px;
+            width: 115px;
+        }
+
+        .mob3_tick_box {
+            float: left;
+            outline: 1px solid #c9c9c9;
+            height: 15px;
+            width: 15px;
+        }
+
+        .mob3_compare_text {
+            float: left;
+            margin: 1px 7px;
+            font-size: 12px;
+        }
+
+        /*this is right side of mob box3*/
+        .mobile_box3_rside {
+            float: left;
+            width: 600px;
+            height: 270px;
+        }
+
+        .mob3_head {
+            float: left;
+            font-weight: 600;
+            margin: 15px 0px 5px 10px;
+        }
+
+        .mob3_rating_box {
+            float: left;
+            margin: 0px 250px 0px 10px;
+            width: 250px;
+            height: 18px;
+        }
+
+        .mob3_rstar {
+            float: left;
+            background-color: #388e3d;
+            width: 39.5px;
+            height: 18px;
+            border-radius: 3px;
+            margin: 0px 10px 0px 0px;
+            font-size: 12px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .mob3_rstar_word {
+            float: left;
+
+            margin: 2px 2px 2px 5px;
+        }
+
+        .mob3_rstar_icon {
+            float: left;
+            margin: 4px 1px 4px 1px;
+            width: 10px;
+        }
+
+        .mob3_rwords {
+            float: left;
+            margin: 2px 0px 2px 0px;
+            font-size: 12.5px;
+            color: #949591;
+            font-weight: 600;
+        }
+
+        /*this is detail box*/
+        .mob3_list {
+            float: left;
+            margin: 10px 10px 10px 10px;
+            width: 360px;
+            height: 300px;
+            font-size: 12.5px;
+
+            padding: 0px 0px 0px 14px;
+            line-height: 1.5;
+            font-size: 13px;
+        }
+
+        /*this is price box*/
+
+        .mobile3_box_price {
+            float: left;
+            margin: 15px 0px;
+            height: 215px;
+            width: 175px;
+        }
+
+        .mob3_bp_b1 {
+            float: left;
+            height: 30px;
+            width: 175px;
+        }
+
+        .mob3_bp_b1_price {
+            float: left;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .mob3_bp_b1_ficon {
+            float: left;
+            margin: 0px 10px;
+        }
+
+        .mob3_bp_dicsp {
+            float: left;
+            font-size: 14px;
+            text-decoration: line-through;
+            color: #9ba0a3;
+        }
+
+        .mob3_bp_dics {
+            float: left;
+            font-size: 14px;
+            margin: 0px 5px;
+            color: #388d3d;
+        }
+
+        /*this is Mens wear page*/
+        .mbottomwear_box {
+            display: none;
+            float: left;
+            width: 77rem;
+            height: 450px;
+            margin: 10px 9rem 10px;
+            background-color: white;
+        }
+
+        /*this is Mens bottomwer box*/
+        .mbwear_box1,
+        .mbwear_box2,
+        .mbwear_box3,
+        .mbwear_box4 {
+            float: left;
+            width: 308px;
+            height: 450px;
+        }
+
+        .hot_deal {
+            float: left;
+            margin: 0px 23px;
+            width: 50px;
+            height: 13px;
+            background-color: #e6f9ee;
+            color: #4bae60;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 8px;
+            border-radius: 2px;
+        }
+
+        /*this is Mens bottomwer box1*/
+        .mbw_b1_imgbox {
+            float: left;
+            margin: 8px 0px 16px;
+            width: 308px;
+            height: 300px;
+        }
+
+        .mbw_b1_img {
+            margin: 0px 54px;
+            width: 200px;
+        }
+
+        .mbw_b1_heart {
+            position: absolute;
+            margin: 15px -63px;
+            opacity: 85%;
+        }
+
+        .mbw_b1_name {
+            float: left;
+            color: #8c8c8c;
+            margin: 0px 10px 3px 20px;
+            font-size: 14px;
+        }
+
+        .mbw_b1_details {
+            float: left;
+            margin: 0px 36px 0px 20px;
+            font-size: 13px;
+        }
+
+        .mbw_b1_price {
+            float: left;
+            font-size: 13px;
+        }
+
+        .mbw_b1_total_price {
+            float: left;
+            margin: 10px 10px 10px 20px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .mbw_b1_dicnt_price {
+            float: left;
+            margin: 10px 10px 10px 0px;
+            text-decoration: line-through;
+            color: #8c8c8c;
+        }
+
+        .mbw_b1_dicnt {
+            float: left;
+            margin: 10px 10px 10px 0px;
+            color: #4bae60;
+            font-weight: 600;
+        }
+
+
+        /*this is Mens bottomwer box2*/
+
+        .mbw_b2_imgbox {
+            float: left;
+            margin: 38px 0px 16px;
+            width: 308px;
+            height: 300px;
+        }
+
+        .mbw_b2_img {
+            float: left;
+            margin: 0px 41px 0px;
+            width: 225px;
+        }
+
+        .mbw_b2_heart {
+            position: absolute;
+            margin: 15px -63px;
+            opacity: 85%;
+        }
+
+        .mbw_b2_name {
+            float: left;
+            color: #8c8c8c;
+            margin: 0px 85px 3px 20px;
+            font-size: 14px;
+        }
+
+        .mbw_b2_details {
+            float: left;
+            margin: 0px 36px 0px 20px;
+            font-size: 13px;
+        }
+
+        .mbw_b2_price {
+            float: left;
+            font-size: 13px;
+        }
+
+        .mbw_b2_total_price {
+            float: left;
+            margin: 10px 10px 10px 20px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .mbw_b2_dicnt_price {
+            float: left;
+            margin: 10px 10px 10px 0px;
+            text-decoration: line-through;
+            color: #8c8c8c;
+        }
+
+        .mbw_b2_dicnt {
+            float: left;
+            margin: 10px 10px 10px 0px;
+            color: #4bae60;
+            font-weight: 600;
+        }
+
+
+        /*this is Mens bottomwer box3*/
+
+        .mbw_b3_imgbox {
+            float: left;
+            margin: 8px 0px 16px;
+            width: 308px;
+            height: 300px;
+        }
+
+        .mbw_b3_img {
+            margin: 0px 41px 0px;
+            width: 225px;
+        }
+
+        .mbw_b3_heart {
+            position: absolute;
+            margin: 15px -63px;
+            opacity: 85%;
+        }
+
+        .mbw_b3_name {
+            float: left;
+            color: #8c8c8c;
+            margin: 0px 10px 3px 20px;
+            font-size: 14px;
+        }
+
+        .mbw_b3_details {
+            float: left;
+            margin: 0px 10px 0px 20px;
+            font-size: 13px;
+        }
+
+        .mbw_b3_price {
+            float: left;
+            font-size: 13px;
+        }
+
+        .mbw_b3_total_price {
+            float: left;
+            margin: 10px 10px 10px 20px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .mbw_b3_dicnt_price {
+            float: left;
+            margin: 10px 10px 10px 0px;
+            text-decoration: line-through;
+            color: #8c8c8c;
+        }
+
+        .mbw_b3_dicnt {
+            float: left;
+            margin: 10px 10px 10px 0px;
+            color: #4bae60;
+            font-weight: 600;
+        }
+
+
+        /*this is Mens bottomwer box4*/
+
+        .mbw_b4_imgbox {
+            float: left;
+            margin: 38px 0px 16px;
+            width: 308px;
+            height: 300px;
+        }
+
+        .mbw_b4_img {
+            margin: 0px 41px 0px;
+            width: 226px;
+        }
+
+        .mbw_b4_heart {
+            position: absolute;
+            margin: 15px -63px;
+            opacity: 85%;
+        }
+
+        .mbw_b4_name {
+            float: left;
+            color: #8c8c8c;
+            margin: 0px 10px 3px 20px;
+            font-size: 14px;
+        }
+
+        .mbw_b4_details {
+            float: left;
+            margin: 0px 36px 0px 20px;
+            font-size: 13px;
+        }
+
+        .mbw_b4_price {
+            float: left;
+            font-size: 13px;
+        }
+
+        .mbw_b4_total_price {
+            float: left;
+            margin: 10px 10px 10px 20px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .mbw_b4_dicnt_price {
+            float: left;
+            margin: 10px 10px 10px 0px;
+            text-decoration: line-through;
+            color: #8c8c8c;
+        }
+
+        .mbw_b4_dicnt {
+            float: left;
+            margin: 10px 10px 10px 0px;
+            color: #4bae60;
+            font-weight: 600;
+        }
+
+
+        /*this is Womens wear page*/
+        .wtopwear_box {
+            display: none;
+            float: left;
+            width: 77rem;
+            height: 450px;
+            margin: 10px 9rem 10px;
+            background-color: white;
+        }
+
+        /*this is Womens topwear box*/
+        .wtwear_box1,
+        .wtwear_box2,
+        .wtwear_box3,
+        .wtwear_box4 {
+            float: left;
+            width: 308px;
+            height: 450px;
+        }
+
+        .hot_deal {
+            float: left;
+            margin: 0px 23px;
+            width: 50px;
+            height: 13px;
+            background-color: #e6f9ee;
+            color: #4bae60;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 8px;
+            border-radius: 2px;
+        }
+
+        /*this is Mens bottomwer box1*/
+        .wtw_b1_imgbox {
+            float: left;
+            margin: 8px 0px 16px;
+            width: 308px;
+            height: 300px;
+        }
+
+        .wtw_b1_img {
+            margin: 0px 41px;
+            width: 225px;
+        }
+
+        .wtw_b1_heart {
+            position: absolute;
+            margin: 15px -63px;
+            opacity: 85%;
+        }
+
+        .wtw_b1_name {
+            float: left;
+            color: #8c8c8c;
+            margin: 0px 10px 3px 20px;
+            font-size: 14px;
+        }
+
+        .wtw_b1_details {
+            float: left;
+            margin: 0px 50px 0px 20px;
+            font-size: 13px;
+        }
+
+        .wtw_b1_price {
+            float: left;
+            font-size: 13px;
+        }
+
+        .wtw_b1_total_price {
+            float: left;
+            margin: 10px 10px 10px 20px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .wtw_b1_dicnt_price {
+            float: left;
+            margin: 10px 10px 10px 0px;
+            text-decoration: line-through;
+            color: #8c8c8c;
+        }
+
+        .wtw_b1_dicnt {
+            float: left;
+            margin: 10px 10px 10px 0px;
+            color: #4bae60;
+            font-weight: 600;
+        }
+
+
+        /*this is Womens topwear box2*/
+
+        .wtw_b2_imgbox {
+            float: left;
+            margin: 37px 0px 16px;
+            width: 308px;
+            height: 300px;
+        }
+
+        .wtw_b2_img {
+            float: left;
+            margin: 0px 51px 0px;
+            width: 205px;
+        }
+
+        .wtw_b2_heart {
+            position: absolute;
+            margin: 15px -63px;
+            opacity: 85%;
+        }
+
+        .wtw_b2_name {
+            float: left;
+            color: #8c8c8c;
+            margin: 0px 85px 3px 20px;
+            font-size: 14px;
+        }
+
+        .wtw_b2_details {
+            float: left;
+            margin: 0px 36px 0px 20px;
+            font-size: 13px;
+        }
+
+        .wtw_b2_price {
+            float: left;
+            font-size: 13px;
+        }
+
+        .wtw_b2_total_price {
+            float: left;
+            margin: 10px 10px 10px 20px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .wtw_b2_dicnt_price {
+            float: left;
+            margin: 10px 10px 10px 0px;
+            text-decoration: line-through;
+            color: #8c8c8c;
+        }
+
+        .wtw_b2_dicnt {
+            float: left;
+            margin: 10px 10px 10px 0px;
+            color: #4bae60;
+            font-weight: 600;
+        }
+
+
+        /*this is Womens topwear box3*/
+
+        .wtw_b3_imgbox {
+            float: left;
+            margin: 8px 0px 16px;
+            width: 308px;
+            height: 300px;
+        }
+
+        .wtw_b3_img {
+            margin: 0px 41px;
+            width: 225px;
+        }
+
+        .wtw_b3_heart {
+            position: absolute;
+            margin: 15px -63px;
+            opacity: 85%;
+        }
+
+        .wtw_b3_name {
+            float: left;
+            color: #8c8c8c;
+            margin: 0px 10px 3px 20px;
+            font-size: 14px;
+        }
+
+        .wtw_b3_details {
+            float: left;
+            margin: 0px 10px 0px 20px;
+            font-size: 13px;
+        }
+
+        .wtw_b3_price {
+            float: left;
+            font-size: 13px;
+        }
+
+        .wtw_b3_total_price {
+            float: left;
+            margin: 10px 10px 10px 20px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .wtw_b3_dicnt_price {
+            float: left;
+            margin: 10px 10px 10px 0px;
+            text-decoration: line-through;
+            color: #8c8c8c;
+        }
+
+        .wtw_b3_dicnt {
+            float: left;
+            margin: 10px 10px 10px 0px;
+            color: #4bae60;
+            font-weight: 600;
+        }
+
+
+        /*this is Womens topwear box4*/
+
+        .wtw_b4_imgbox {
+            float: left;
+            margin: 37px 0px 16px;
+            width: 308px;
+            height: 300px;
+        }
+
+        .wtw_b4_img {
+            margin: 0px 41px;
+            width: 225px;
+        }
+
+        .wtw_b4_heart {
+            position: absolute;
+            margin: 15px -63px;
+            opacity: 85%;
+        }
+
+        .wtw_b4_name {
+            float: left;
+            color: #8c8c8c;
+            margin: 0px 10px 3px 20px;
+            font-size: 14px;
+        }
+
+        .wtw_b4_details {
+            float: left;
+            margin: 0px 36px 0px 20px;
+            font-size: 13px;
+        }
+
+        .wtw_b4_price {
+            float: left;
+            font-size: 13px;
+        }
+
+        .wtw_b4_total_price {
+            float: left;
+            margin: 10px 10px 10px 20px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .wtw_b4_dicnt_price {
+            float: left;
+            margin: 10px 10px 10px 0px;
+            text-decoration: line-through;
+            color: #8c8c8c;
+        }
+
+        .wtw_b4_dicnt {
+            float: left;
+            margin: 10px 10px 10px 0px;
+            color: #4bae60;
+            font-weight: 600;
+        }
+
+        /*this is laptop box*/
+        .laptop_box {
+            display: none;
+            float: left;
+            width: 77rem;
+            height: 855px;
+            outline: 1px solid #eff1f4;
+            margin: 10px 9rem 10px;
+            background-color: white;
+        }
+
+        /*this is laptop box 1*/
+        .laptop_box1 {
+            float: left;
+            width: 77rem;
+            height: 285px;
+            outline: 1px solid #eff1f4;
+        }
+
+        /*this is left side of laptop box1*/
+        .laptop_box1_lside {
+            float: left;
+            width: 235px;
+            height: 270px;
+        }
+
+        .lptp1_img_box {
+            float: left;
+            margin: 15px 0px;
+            width: 235px;
+            height: 215px;
+        }
+
+        .bestseller {
+            position: absolute;
+            width: 80px;
+            height: 15px;
+            background-color: #009f98;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 3px;
+            text-align: center;
+            padding: 3px;
+            margin: 0px 8px;
+        }
+
+        .lptp1_img {
+            float: left;
+            margin: 24px 0px 24px 20px;
+            width: 200px;
+        }
+
+        .lptp1_like_icon {
+            float: left;
+            position: absolute;
+            margin: 0px 0px 0px -10px;
+        }
+
+        .lptp1_compare {
+            float: left;
+            margin: 0px 0px 0px 20px;
+            height: 15px;
+            width: 115px;
+        }
+
+        .lptp1_tick_box {
+            float: left;
+            outline: 1px solid #c9c9c9;
+            height: 15px;
+            width: 15px;
+        }
+
+        .lptp1_compare_text {
+            float: left;
+            margin: 1px 7px;
+            font-size: 12px;
+        }
+
+        /*this is right side of laptop box1*/
+        .lptp_box1_rside {
+            float: left;
+            margin: 0px 60px 0px 0px;
+            width: 540px;
+            height: 270px;
+        }
+
+        .lptp1_head {
+            float: left;
+            font-weight: 600;
+            margin: 15px 0px 5px 10px;
+        }
+
+        .lptp1_rating_box {
+            float: left;
+            margin: 0px 250px 0px 10px;
+            width: 250px;
+            height: 18px;
+        }
+
+        .lptp1_rstar {
+            float: left;
+            background-color: #388e3d;
+            width: 39.5px;
+            height: 18px;
+            border-radius: 3px;
+            margin: 0px 10px 0px 0px;
+            font-size: 12px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .lptp1_rstar_word {
+            float: left;
+
+            margin: 2px 2px 2px 5px;
+        }
+
+        .lptp1_rstar_icon {
+            float: left;
+            margin: 4px 1px 4px 1px;
+            width: 10px;
+        }
+
+        .lptp1_rwords {
+            float: left;
+            margin: 2px 0px 2px 0px;
+            font-size: 12.5px;
+            color: #949591;
+            font-weight: 600;
+        }
+
+        /*this is detail box*/
+        .lptp1_list {
+            float: left;
+            margin: 10px 10px 10px 10px;
+            width: 360px;
+            height: 300px;
+            font-size: 12.5px;
+
+            padding: 0px 0px 0px 14px;
+            line-height: 1.5;
+            font-size: 13px;
+        }
+
+        /*this is price box*/
+
+        .lptp1_box_price {
+            float: left;
+            margin: 15px 0px;
+            height: 215px;
+            width: 175px;
+        }
+
+        .lptp1_bp_b1 {
+            float: left;
+            height: 30px;
+            width: 175px;
+        }
+
+        .lptp1_bp_b1_price {
+            float: left;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .lptp1_bp_b1_ficon {
+            float: left;
+            margin: 0px 10px;
+        }
+
+        .lptp1_bp_dicsp {
+            float: left;
+            font-size: 14px;
+            text-decoration: line-through;
+            color: #9ba0a3;
+        }
+
+        .lptp1_bp_dics {
+            float: left;
+            font-size: 14px;
+            margin: 0px 5px;
+            color: #388d3d;
+        }
+
+        /*this is mobile box 2*/
+        .laptop_box2 {
+            float: left;
+            width: 77rem;
+            height: 285px;
+            outline: 1px solid #eff1f4;
+        }
+
+        /*this is left side of mob box2*/
+        .laptop_box2_lside {
+            float: left;
+            width: 235px;
+            height: 270px;
+        }
+
+        .lptp2_img_box {
+            float: left;
+            margin: 15px 0px;
+            width: 235px;
+            height: 215px;
+        }
+
+        .lptp2_img {
+            float: left;
+            margin: 24px 0px 24px 20px;
+            width: 200px;
+        }
+
+        .lptp2_like_icon {
+            float: left;
+            position: absolute;
+            margin: 0px 0px 0px -10px;
+        }
+
+        .lptp2_compare {
+            float: left;
+            margin: 0px 0px 0px 20px;
+            height: 15px;
+            width: 115px;
+        }
+
+        .lptp2_tick_box {
+            float: left;
+            outline: 1px solid #c9c9c9;
+            height: 15px;
+            width: 15px;
+        }
+
+        .lptp2_compare_text {
+            float: left;
+            margin: 1px 7px;
+            font-size: 12px;
+        }
+
+        /*this is right side of laptop box2*/
+        .lptp_box2_rside {
+            float: left;
+            margin: 0px 60px 0px 0px;
+            width: 540px;
+            height: 270px;
+        }
+
+        .lptp2_head {
+            float: left;
+            font-weight: 600;
+            margin: 15px 0px 5px 10px;
+        }
+
+        .lptp2_rating_box {
+            float: left;
+            margin: 0px 250px 0px 10px;
+            width: 250px;
+            height: 18px;
+        }
+
+        .lptp2_rstar {
+            float: left;
+            background-color: #388e3d;
+            width: 39.5px;
+            height: 18px;
+            border-radius: 3px;
+            margin: 0px 10px 0px 0px;
+            font-size: 12px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .lptp2_rstar_word {
+            float: left;
+
+            margin: 2px 2px 2px 5px;
+        }
+
+        .lptp2_rstar_icon {
+            float: left;
+            margin: 4px 1px 4px 1px;
+            width: 10px;
+        }
+
+        .lptp2_rwords {
+            float: left;
+            margin: 2px 0px 2px 0px;
+            font-size: 12.5px;
+            color: #949591;
+            font-weight: 600;
+        }
+
+        /*this is detail box*/
+        .lptp2_list {
+            float: left;
+            margin: 10px 10px 10px 10px;
+            width: 360px;
+            height: 300px;
+            font-size: 12.5px;
+
+            padding: 0px 0px 0px 14px;
+            line-height: 1.5;
+            font-size: 13px;
+        }
+
+        /*this is price box*/
+
+        .lptp2_box_price {
+            float: left;
+            margin: 15px 0px;
+            height: 215px;
+            width: 175px;
+        }
+
+        .lptp2_bp_b1 {
+            float: left;
+            height: 30px;
+            width: 175px;
+        }
+
+        .lptp2_bp_b1_price {
+            float: left;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .lptp2_bp_b1_ficon {
+            float: left;
+            margin: 0px 10px;
+        }
+
+        .lptp2_bp_dicsp {
+            float: left;
+            font-size: 14px;
+            text-decoration: line-through;
+            color: #9ba0a3;
+        }
+
+        .lptp2_bp_dics {
+            float: left;
+            font-size: 14px;
+            margin: 0px 5px;
+            color: #388d3d;
+        }
+
+
+        /*this is  box 3*/
+        .laptop_box3 {
+            float: left;
+            width: 77rem;
+            height: 285px;
+            outline: 1px solid #eff1f4;
+        }
+
+        /*this is left side of laptop box3*/
+        .laptop_box3_lside {
+            float: left;
+            width: 235px;
+            height: 270px;
+        }
+
+        .lptp3_img_box {
+            float: left;
+            margin: 15px 0px;
+            width: 235px;
+            height: 215px;
+        }
+
+        .bestseller {
+            position: absolute;
+            width: 80px;
+            height: 15px;
+            background-color: #009f98;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 3px;
+            text-align: center;
+            padding: 3px;
+            margin: 0px 8px;
+        }
+
+        .lptp3_img {
+            float: left;
+            margin: 24px 0px 24px 20px;
+            width: 200px;
+        }
+
+        .lptp3_like_icon {
+            float: left;
+            position: absolute;
+            margin: 0px 0px 0px -10px;
+        }
+
+        .lptp3_compare {
+            float: left;
+            margin: 0px 0px 0px 20px;
+            height: 15px;
+            width: 115px;
+        }
+
+        .lptp3_tick_box {
+            float: left;
+            outline: 1px solid #c9c9c9;
+            height: 15px;
+            width: 15px;
+        }
+
+        .lptp3_compare_text {
+            float: left;
+            margin: 1px 7px;
+            font-size: 12px;
+        }
+
+        /*this is right side of mob box3*/
+        .lptp_box3_rside {
+            float: left;
+            margin: 0px 60px 0px 0px;
+            width: 540px;
+            height: 270px;
+        }
+
+        .lptp3_head {
+            float: left;
+            font-weight: 600;
+            margin: 15px 0px 5px 10px;
+        }
+
+        .lptp3_rating_box {
+            float: left;
+            margin: 0px 250px 0px 10px;
+            width: 250px;
+            height: 18px;
+        }
+
+        .lptp3_rstar {
+            float: left;
+            background-color: #388e3d;
+            width: 39.5px;
+            height: 18px;
+            border-radius: 3px;
+            margin: 0px 10px 0px 0px;
+            font-size: 12px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .lptp3_rstar_word {
+            float: left;
+
+            margin: 2px 2px 2px 5px;
+        }
+
+        .lptp3_rstar_icon {
+            float: left;
+            margin: 4px 1px 4px 1px;
+            width: 10px;
+        }
+
+        .lptp3_rwords {
+            float: left;
+            margin: 2px 0px 2px 0px;
+            font-size: 12.5px;
+            color: #949591;
+            font-weight: 600;
+        }
+
+        /*this is detail box*/
+        .lptp3_list {
+            float: left;
+            margin: 10px 10px 10px 10px;
+            width: 360px;
+            height: 300px;
+            font-size: 12.5px;
+
+            padding: 0px 0px 0px 14px;
+            line-height: 1.5;
+            font-size: 13px;
+        }
+
+        /*this is price box*/
+
+        .lptp3_box_price {
+            float: left;
+            margin: 15px 0px;
+            height: 215px;
+            width: 175px;
+        }
+
+        .lptp3_bp_b1 {
+            float: left;
+            height: 30px;
+            width: 175px;
+        }
+
+        .lptp3_bp_b1_price {
+            float: left;
+            font-weight: 600;
+            font-size: 20px;
+        }
+
+        .lptp3_bp_b1_ficon {
+            float: left;
+            margin: 0px 10px;
+        }
+
+        .lptp3_bp_dicsp {
+            float: left;
+            font-size: 14px;
+            text-decoration: line-through;
+            color: #9ba0a3;
+        }
+
+        .lptp3_bp_dics {
+            float: left;
+            font-size: 14px;
+            margin: 0px 5px;
+            color: #388d3d;
+        }
+
+        /*this is furniture wear page*/
+        .frntre_box {
+            display: none;
+            float: left;
+            width: 77rem;
+            height: 455px;
+            margin: 10px 9rem 10px;
+            background-color: white;
+        }
+
+        /*this is furniture box*/
+        .frntre_box1,
+        .frntre_box2,
+        .frntre_box3,
+        .frntre_box4 {
+            float: left;
+            width: 308px;
+            height: 455px;
+        }
+
+        .hot_deal {
+            float: left;
+            margin: 0px 23px;
+            width: 50px;
+            height: 13px;
+            background-color: #e6f9ee;
+            color: #4bae60;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 8px;
+            border-radius: 2px;
+        }
+
+        /*this is furniture bottomwer box1*/
+        .frntre_b1_imgbox {
+            float: left;
+            margin: 8px 0px 16px;
+            width: 308px;
+            height: 300px;
+        }
+
+        .frntre_b1_img {
+            margin: 20px 13.5px 20px 17.5px;
+            width: 277px;
+        }
+
+        .frntre_b1_heart {
+            position: absolute;
+            margin: 30px -40px;
+            opacity: 85%;
+        }
+
+        .frntre_b1_name {
+            float: left;
+            color: #8c8c8c;
+            margin: 8px 125px 3px 20px;
+            font-size: 11.5px;
+        }
+
+        .frntre_b1_details {
+            float: left;
+            margin: 0px 50px 0px 20px;
+            font-size: 13px;
+        }
+
+        .frntre_b1_price {
+            float: left;
+            font-size: 13px;
+        }
+
+        .frntre_b1_total_price {
+            float: left;
+            margin: 2px 10px 8px 20px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .frntre_b1_dicnt_price {
+            float: left;
+            margin: 3px 10px 10px 0px;
+            text-decoration: line-through;
+            color: #8c8c8c;
+        }
+
+        .frntre_b1_dicnt {
+            float: left;
+            margin: 3px 10px 10px 0px;
+            color: #4bae60;
+            font-weight: 600;
+        }
+
+
+        /*this is furniture box2*/
+
+        .frntre_b2_imgbox {
+            float: left;
+            margin: 37px 0px 16px;
+            width: 308px;
+            height: 300px;
+        }
+
+        .frntre_b2_img {
+            float: left;
+            margin: 20px 13.5px 20px 17.5px;
+            width: 277px;
+        }
+
+        .frntre_b2_heart {
+            position: absolute;
+            margin: 30px -40px;
+            opacity: 85%;
+        }
+
+        .frntre_b2_name {
+            float: left;
+            color: #8c8c8c;
+            margin: 8px 125px 3px 20px;
+            font-size: 11.5px;
+        }
+
+        .frntre_b2_details {
+            float: left;
+            margin: 0px 36px 0px 20px;
+            font-size: 13px;
+        }
+
+        .frntre_b2_price {
+            float: left;
+            font-size: 13px;
+        }
+
+        .frntre_b2_total_price {
+            float: left;
+            margin: 2px 10px 8px 20px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .frntre_b2_dicnt_price {
+            float: left;
+            margin: 3px 10px 10px 0px;
+            text-decoration: line-through;
+            color: #8c8c8c;
+        }
+
+        .frntre_b2_dicnt {
+            float: left;
+            margin: 3px 10px 10px 0px;
+            color: #4bae60;
+            font-weight: 600;
+        }
+
+
+        /*this is furniture box3*/
+
+        .frntre_b3_imgbox {
+            float: left;
+            margin: 8px 0px 16px;
+            width: 308px;
+            height: 300px;
+        }
+
+        .frntre_b3_img {
+            margin: 20px 13.5px 20px 17.5px;
+            width: 277px;
+        }
+
+        .frntre_b3_heart {
+            position: absolute;
+            margin: 30px -40px;
+            opacity: 85%;
+        }
+
+        .frntre_b3_name {
+            float: left;
+            color: #8c8c8c;
+            margin: 8px 125px 3px 20px;
+            font-size: 11.5px;
+        }
+
+        .frntre_b3_details {
+            float: left;
+            margin: 0px 10px 0px 20px;
+            font-size: 13px;
+        }
+
+        .frntre_b3_price {
+            float: left;
+            font-size: 13px;
+        }
+
+        .frntre_b3_total_price {
+            float: left;
+            margin: 2px 10px 8px 20px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .frntre_b3_dicnt_price {
+            float: left;
+            margin: 3px 10px 10px 0px;
+            text-decoration: line-through;
+            color: #8c8c8c;
+        }
+
+        .frntre_b3_dicnt {
+            float: left;
+            margin: 3px 10px 10px 0px;
+            color: #4bae60;
+            font-weight: 600;
+        }
+
+
+        /*this is furniture box4*/
+
+        .frntre_b4_imgbox {
+            float: left;
+            margin: 37px 0px 16px;
+            width: 308px;
+            height: 300px;
+        }
+
+        .frntre_b4_img {
+            margin: 20px 13.5px 20px 17.5px;
+            width: 257px;
+        }
+
+        .frntre_b4_heart {
+            position: absolute;
+            margin: 30px -40px;
+            opacity: 85%;
+        }
+
+        .frntre_b4_name {
+            float: left;
+            color: #8c8c8c;
+            margin: 8px 125px 3px 20px;
+            font-size: 11.5px;
+        }
+
+        .frntre_b4_details {
+            float: left;
+            margin: 0px 36px 0px 20px;
+            font-size: 13px;
+        }
+
+
+        .frntre_rating_box {
+            float: left;
+            margin: 4px 35px 2px 20px;
+            width: 250px;
+            height: 18px;
+        }
+
+        .frntre_rstar {
+            float: left;
+            background-color: #388e3d;
+            width: 39.5px;
+            height: 18px;
+            border-radius: 3px;
+            margin: 0px 10px 0px 0px;
+            font-size: 12px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .frntre_rstar_word {
+            float: left;
+
+            margin: 2px 2px 2px 5px;
+        }
+
+        .frntre_rstar_icon {
+            float: left;
+            margin: 4px 1px 4px 1px;
+            width: 10px;
+        }
+
+        .frntre_rwords {
+            float: left;
+            margin: 2px 0px 2px 0px;
+            font-size: 12.5px;
+            color: #949591;
+            font-weight: 600;
+        }
+
+        .frntre_b4_price {
+            float: left;
+            font-size: 13px;
+        }
+
+        .frntre_b4_total_price {
+            float: left;
+            margin: 2px 10px 8px 20px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .frntre_b4_dicnt_price {
+            float: left;
+            margin: 3px 10px 10px 0px;
+            text-decoration: line-through;
+            color: #8c8c8c;
+        }
+
+        .frntre_b4_dicnt {
+            float: left;
+            margin: 3px 10px 10px 0px;
+            color: #4bae60;
+            font-weight: 600;
+        }
+
+        /*mobile page 2*/
+        .mobile_page2 {
+            display: none;
+            float: left;
+            width: 85.45rem;
+            height: 600px;
+            margin: 10px 4.8rem 10px;
+            background-color: white;
+        }
+
+        /*this is left side of mobile page 2*/
+        .mobp2_ls {
+            float: left;
+            margin: 15px 25px 15px 15px;
+            outline: 1.5px solid #f1f2f4;
+            width: 528px;
+            height: 450px;
+        }
+
+        .mobp2_ls_heart_crcle {
+            position: absolute;
+            width: 34px;
+            height: 34px;
+            border-radius: 22px;
+            box-shadow: 0px 0px 2px 2.5px #f2f2f2;
+            margin: 15px 0px 0px 29.8rem;
+        }
+
+        .mobp2_ls_heart {
+            margin: 9px;
+        }
+
+        .mobp2_ls_img {
+            float: left;
+            margin: 17px 120px;
+            width: 54.65%;
+        }
+
+        /*this is right side of mobile page 2*/
+        .mobp2_rs {
+            float: left;
+            margin: 15px 0px 15px 15px;
+            width: 783px;
+            height: 500px;
+        }
+
+        .mobp2_rs_rbox {
+            float: left;
+            margin: 10px 433px 2px 0px;
+            width: 350px;
+            height: 18px;
+        }
+
+        .mobp2_rs_line2_rstar {
+            float: left;
+            background-color: #388e3d;
+            width: 39.5px;
+            height: 18px;
+            border-radius: 3px;
+            margin: 0px 10px 0px 0px;
+            font-size: 12px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .mobp2_rs_line2_word {
+            float: left;
+
+            margin: 2px 2px 2px 5px;
+        }
+
+        .mobp2_rs_line2_icon {
+            float: left;
+            margin: 4px 1px 4px 1px;
+            width: 10px;
+        }
+
+        .mobp2_rs_line2_rwords {
+            float: left;
+            margin: 2px 0px 2px 0px;
+            font-size: 12.5px;
+            color: #949591;
+            font-weight: 600;
+        }
+
+        .mobp2_rs_line2_faicon {
+            margin: -3px 14px;
+        }
+
+        .mobp2_rs_line3 {
+            float: left;
+            color: #388e3d;
+            margin: 10px 674px 10px 0px;
+            font-size: 13.5px;
+            font-weight: 600;
+        }
+
+        .mobp2_rs_line4 {
+            float: left;
+            margin: 0px 525px 0px 0px
+        }
+
+        .mobp2_rs_line4_wrd1 {
+            float: left;
+            font-weight: 600;
+            font-size: 25px;
+        }
+
+        .mobp2_rs_line4_wrd2 {
+            float: left;
+            text-decoration: line-through;
+            color: #8c8d8d;
+            margin: 6px 10px;
+        }
+
+        .mobp2_rs_line4_wrd3 {
+            float: left;
+            color: #388e3d;
+            font-weight: 600;
+            margin: 6px 0px;
+        }
+
+        .mobp2_rs_line5 {
+            float: left;
+            margin: 10px 337px 10px 0px;
+        }
+
+        .mobp2_rs_line5_heading {
+            float: left;
+            font-size: 15px;
+            color: #949591;
+        }
+
+        .mobp2_rs_line5_heading_lists {
+            float: left;
+            color: #3c3a34;
+            font-size: 14px;
+            margin: 0px 0px;
+            padding-left: 55px;
+        }
+
+        .mobp2_rs_line6 {
+            float: left;
+        }
+
+        .mobp2_rs_line6_heading {
+            float: left;
+            font-size: 15px;
+            color: #949591;
+        }
+
+        .mobp2_rs_line6_para {
+            float: left;
+            width: 600px;
+            margin: 0px 0px 10px 25px;
+            color: #3c3a34;
+            font-size: 14px;
+        }
+
+
+        .button_box {
+            position: absolute;
+            margin: 30rem 0px 0px 15px;
+            width: 528px;
+            height: 60px;
+        }
+
+        .add_to_cart {
+            float: left;
+            margin: 0px 10px 0px 0px;
+            width: 219px;
+            height: 21px;
+            background-color: #ff9f00;
+            border-radius: 2px;
+            text-align: center;
+            padding: 20px;
+            font-size: 19px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .buy_now {
+            float: left;
+            width: 219px;
+            height: 21px;
+            background-color: #fb641b;
+            border-radius: 2px;
+            text-align: center;
+            padding: 20px;
+            font-size: 19px;
+            font-weight: 600;
+            color: white;
+        }
+
+        /*add to cart page*/
+
+        .add_to_cart_page {
+            display: none;
+            float: left;
+            height: 490px;
+            width: 100%;
+            outline: 1px solid #dfdfe2;
+        }
+
+        /*left side box*/
+
+        .atc_leftside_box {
+            float: left;
+            margin: 25px 0px 0px 9rem;
+            height: 363px;
+            width: 865px;
+            box-shadow: 0px 0px 2px 1px #cacbcc;
+            border-radius: 2px;
+        }
+
+        .atc_lf_address_box {
+            float: left;
+            outline: 1px solid #eaecef;
+            height: 58px;
+            width: 100%;
+            background-color: white;
+            font-size: 13.5px;
+        }
+
+        .atc_lf_adrs_wrd1 {
+            float: left;
+            margin: 21px 32.2rem 21px 17px;
+        }
+
+        .atc_lf_adrs_wrd2 {
+            float: left;
+            margin: 12px 0px;
+            padding: 9px 0px;
+            width: 175px;
+            outline: 1px solid #e4e4e4;
+            color: #2873f0;
+            text-align: center;
+            border-radius: 2px;
+        }
+
+        .atc_lf_cartprdct_box {
+            float: left;
+            margin: 11px 0px 0px 0px;
+            outline: 1px solid #eaecef;
+            height: 210px;
+            width: 100%;
+            background-color: white;
+        }
+
+        .atc_lf_cb1 {
+            float: left;
+            margin: 23px 10px 20px 0px;
+            width: 590px;
+            height: 110px;
+        }
+
+        .atc_lf_cb1_leftside {
+            float: left;
+            margin: 0px 25px;
+            width: 110px;
+            height: 110px;
+        }
+
+        .atc_lf_cb1_ls_img {
+            float: left;
+            width: 110px;
+            height: 110px;
+        }
+
+        .atc_lf_cb1_rightside {
+            float: left;
+            width: 420px;
+            height: 110px;
+        }
+
+        .atc_lf_cb1_rs_pname {
+            float: left;
+            font-size: 15px;
+        }
+
+        .atc_lf_cb1_rs_pnum {
+            float: left;
+            width: 100%;
+            font-size: 13px;
+            margin: 5px 0px 10px;
+            color: #9b9da3;
+        }
+
+        .atc_lf_cb1_rs_sellername {
+            float: left;
+            width: 100%;
+            font-size: 13px;
+            color: #9b9da3;
+        }
+
+        .atc_lf_cb1_rs_sm_img {
+            width: 50px;
+            margin: -3px 0px;
+        }
+
+        .atc_lf_cb1_rs_price {
+            float: left;
+            margin: 0px 0px 0px 0px;
+            width: 100%;
+        }
+
+        .atc_lf_cb1_rs_lessprice {
+            float: left;
+            font-size: 14px;
+            margin: 8.4px 0px 0px;
+            text-decoration: line-through;
+            color: #8c8d8d;
+        }
+
+        .atc_lf_cb1_rs_discountprice {
+            float: left;
+            font-size: 17px;
+            margin: 6px 10px;
+        }
+
+        .atc_lf_cb1_rs_discount {
+            float: left;
+            color: #388e3d;
+            font-weight: 600;
+            margin: 9.3px 0px;
+            font-size: 14px;
+        }
+
+        .atc_lf_cb1_rs_discount_sign {
+            margin: -2px 0px;
+        }
+
+        .atc_lf_cb2 {
+            float: left;
+            font-size: 13.5px;
+            margin: 23px 0px 20px 0px;
+            width: 265px;
+            height: 110px;
+        }
+
+        .atc_lf_cb2_dtime {
+            float: left;
+        }
+
+        .atc_lf_cb2_dlvrychrge {
+            float: left;
+            color: #8c8d8d;
+        }
+
+        .atc_lf_cb2_dlvryfree {
+            float: left;
+            color: #388d3d;
+        }
+
+        .atc_lf_cb3 {
+            float: left;
+            width: 400px;
+            height: 30px;
+        }
+
+        .atc_lf_cb3_box1 {
+            float: left;
+            padding: 4px 0px;
+            margin: 0px 0px 0px 25px;
+            text-align: center;
+            width: 27px;
+            border-radius: 13px;
+            outline: 1px solid #cacaca;
+        }
+
+        .atc_lf_cb3_box2 {
+            float: left;
+            text-align: center;
+            padding: 4px 0px;
+            margin: 0px 6px;
+            width: 45px;
+            outline: 1px solid #cacaca;
+
+        }
+
+        .atc_lf_cb3_box3 {
+            float: left;
+            padding: 4px 0px;
+            margin: 0px 0px;
+            text-align: center;
+            width: 27px;
+            border-radius: 13px;
+            outline: 1px solid #cacaca;
+        }
+
+        .atc_lf_cb3_word1 {
+            float: left;
+            margin: 6px 20px 6px 20px;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        .atc_lf_cb3_word2 {
+            float: left;
+            font-size: 15px;
+            margin: 6px 0px;
+            font-weight: 500;
+        }
+
+
+        .atc_lf_phbox {
+            float: left;
+            height: 83px;
+            width: 100%;
+            background-color: white;
+            border-radius: 2px;
+            box-shadow: 0px -3px 7px 1px #efefefcc;
+        }
+
+        .atc_lf_button {
+            float: left;
+            margin: 17px 0px 17px 37rem;
+            background-color: #fb641b;
+            color: white;
+            width: 220px;
+            text-align: center;
+            padding: 16px;
+            border-radius: 2px;
+            font-size: 15px;
+            font-weight: 600;
+
+        }
+
+        /*right side box*/
+
+        .atc_rightside_box {
+            float: left;
+            margin: 25px 0px 0px 17px;
+            height: 345px;
+            width: 363px;
+            box-shadow: 0px 1px 1px 0px #cacbcc;
+            border-radius: 2px;
+            background-color: white;
+        }
+
+        .atc_rb_pricedtls {
+            float: left;
+            width: 100%;
+            height: 16px;
+            outline: 2px solid #f6f6f6;
+            font-size: 15px;
+            color: #858a91;
+            font-weight: 600;
+            padding: 14px 0px 14px 30px;
+        }
+
+        .atc_rb_price,
+        .atc_rb_discnt,
+        .atc_rb_pltfrm_fee,
+        .atc_rb_dlvry,
+        .atc_rb_saving {
+            float: left;
+            width: 91.5%;
+            padding: 14px 0px 15px 30px;
+        }
+
+        .atc_rb_price_wrd1 {
+            float: left;
+        }
+
+        .atc_rb_price_wrd2 {
+            float: left;
+            margin: 0px 27px 0px 141px;
+        }
+
+        .atc_rb_discnt_wrd1 {
+            float: left;
+        }
+
+        .atc_rb_discnt_wrd2 {
+            float: left;
+            color: #559655;
+            margin: 0px 27px 0px 181px;
+        }
+
+        .atc_rb_pltfrm_fee_wrd1 {
+            float: left;
+        }
+
+        .atc_rb_pltfrm_fee_wrd2 {
+            float: left;
+            margin: 0px 27px 0px 173px;
+        }
+
+        .atc_rb_dlvry_wrd1 {
+            float: left;
+        }
+
+        .atc_rb_dlvry_wrd2 {
+            float: left;
+            margin: 0px 5px 0px 101px;
+            color: #858a91;
+            text-decoration: line-through;
+        }
+
+        .atc_rb_dlvry_wrd3 {
+            float: left;
+            margin: 0px 27px 0px 0px;
+            color: #559655;
+        }
+
+        .atc_rb_total_amnt {
+            float: left;
+            width: 85%;
+            margin: 0px 27px;
+            border-top-style: dotted;
+            border-bottom-style: dotted;
+            padding: 20px 0px 20px 0px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .atc_rb_total_amnt_wrd1 {
+            float: left;
+        }
+
+        .atc_rb_total_amnt_wrd2 {
+            float: left;
+            margin: 0px 0px 0px 136px;
+        }
+
+        .atc_rb_saving {
+            float: left;
+            color: #559655;
+            font-weight: 600;
+        }
+
+        .atc_rb_saving_wrd1 {
+            float: left;
+        }
+
+        .atc_rb_saving_wrd2 {
+            float: left;
+        }
+
+        .atc_rb_saving_wrd3 {
+            float: left;
+        }
+
+
+        /*this is Product details page*/
+
+        .product_details {
+            float: left;
+            display: none;
+            margin: 20px 7.35rem;
+            width: 1300px;
+            height: 600px;
+            background-color: white;
+            box-shadow: 0px 0px 2px 1px #cacbcc;
+        }
+
+        .pd_heading {
+            float: left;
+            width: 100%;
+            font-size: 22px;
+            font-weight: 600;
+            padding: 10px 0px;
+            text-align: center;
+            color: white;
+            background-color: #2873f0;
+        }
+
+        .pd_line1,
+        .pd_line2,
+        .pd_line3,
+        .pd_line4 {
+            float: left;
+            width: 100%;
+            height: 45px;
+            margin: 20px 0px 0px 0px;
+        }
+
+        .pd_line1 {
+            margin: 60px 0px 0px 0px;
+        }
+
+        .pd_line1_wrd1,
+        .pd_line2_wrd1,
+        .pd_line3_wrd1,
+        .pd_line4_wrd1 {
+            float: left;
+            text-align: center;
+            margin: 0px 50px 0px 50px;
+            width: 200px;
+            padding: 14px 0px;
+            font-weight: 600;
+        }
+
+        .pd_line1_wrd2,
+        .pd_line2_wrd2,
+        .pd_line3_wrd2,
+        .pd_line4_wrd2 {
+            float: left;
+            width: 920px;
+            height: 45px;
+            font-size: 16px;
+            margin: 0px 50px 0px 0px;
+            padding: 0px 10px;
+            box-shadow: 0px 0.5px 2px .5px #cacbcc;
+        }
+
+        .pd_checkout_button {
+            float: left;
+            width: 220px;
+            margin: 50px 32.75rem;
+            background-color: #fb641b;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            border-radius: 2px;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+
+
+        /*this is invoice details page*/
+
+        .invoice_page {
+            display: none;
+            float: left;
+            margin: 20px 14.55rem;
+            width: 1070px;
+            height: 600px;
+            background-color: white;
+            box-shadow: 0px 0px 2px 1px #cacbcc;
+        }
+
+        .ip_heading {
+            float: left;
+            width: 100%;
+            font-size: 22px;
+            font-weight: 600;
+            padding: 10px 0px;
+            text-align: center;
+            color: white;
+            background-color: #2873f0;
+        }
+
+        .ip_line1,
+        .ip_line2,
+        .ip_line3,
+        .ip_line4,
+        .ip_line5,
+        .ip_line6,
+        .ip_line7,
+        .ip_line8 {
+            float: left;
+            width: 100%;
+            height: 45px;
+            margin: 5px 0px 0px 0px;
+        }
+
+        .ip_line1 {
+            margin: 60px 0px 0px 0px;
+        }
+
+        .ip_line1_wrd1,
+        .ip_line2_wrd1,
+        .ip_line3_wrd1,
+        .ip_line4_wrd1,
+        .ip_line5_wrd1,
+        .ip_line6_wrd1,
+        .ip_line7_wrd1,
+        .ip_line8_wrd1 {
+            float: left;
+            text-align: center;
+            margin: 0px 5px 0px 50px;
+            width: 60px;
+            padding: 14px 0px;
+            font-weight: 600;
+            outline: 1px solid black;
+            box-shadow: 0px 0.5px 2px .5px #cacbcc;
+        }
+
+        .ip_line1_wrd2,
+        .ip_line2_wrd2,
+        .ip_line3_wrd2,
+        .ip_line4_wrd2,
+        .ip_line5_wrd2,
+        .ip_line6_wrd2,
+        .ip_line7_wrd2,
+        .ip_line8_wrd2 {
+            float: left;
+            width: 150px;
+            margin: 0px 5px 0px 0px;
+            padding: 14px 0px;
+            outline: 1px solid black;
+            text-align: center;
+        }
+
+
+        .ip_line1_wrd3,
+        .ip_line2_wrd3,
+        .ip_line3_wrd3,
+        .ip_line4_wrd3,
+        .ip_line5_wrd3,
+        .ip_line6_wrd3,
+        .ip_line7_wrd3,
+        .ip_line8_wrd3 {
+            float: left;
+            width: 730px;
+            height: 18px;
+            padding: 14px 10px;
+            font-size: 18px;
+            margin: 0px 50px 0px 0px;
+            outline: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--this is index page-->
+    <div class="index_page" id="index_page">
+
+        <!--this is nav bar-->
+        <div class="nav_bar">
+            <div class="logo_box">
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg"
+                    class="logo_img" width="160" height="40" title="Flipkart">
+            </div>
+            <div class="nav_srchbox">
+                <svg width="24" height="24" class="srch_img" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Search Icon</title>
+                    <path
+                        d="M10.5 18C14.6421 18 18 14.6421 18 10.5C18 6.35786 14.6421 3 10.5 3C6.35786 3 3 6.35786 3 10.5C3 14.6421 6.35786 18 10.5 18Z"
+                        stroke="#717478" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M16 16L21 21" stroke="#717478" stroke-width="1.4" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                </svg>
+                <p class="nav_srchbox_text">Search for products, brands and more</p>
+            </div>
+            <div class="nav_login">
+                <img src="user (1).png" alt="Login" class="nav_ulogin_icon" width="20" height="20">
+                <p class="navl_tex">Login</p>
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCAxNCAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjBfZF80OTc0Xzc1OTY5KSI+CjxwYXRoIGQ9Ik0zIDJMNyA2TDExIDIiIHN0cm9rZT0iIzExMTExMiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L2c+CjxkZWZzPgo8ZmlsdGVyIGlkPSJmaWx0ZXIwX2RfNDk3NF83NTk2OSIgeD0iMC4yNSIgeT0iMC4yNSIgd2lkdGg9IjEzLjUiIGhlaWdodD0iOS44MTI1IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdHlwZT0ibWF0cml4IiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIiByZXN1bHQ9ImhhcmRBbHBoYSIvPgo8ZmVPZmZzZXQgZHk9IjEiLz4KPGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMSIvPgo8ZmVDb2xvck1hdHJpeCB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMC4xNiAwIi8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93XzQ5NzRfNzU5NjkiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3dfNDk3NF83NTk2OSIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8L3N2Zz4K"
+                    alt="Chevron" class="-dOa_b XdYXbi nav_down_icon" width="12" height="12">
+            </div>
+            <div class="nav_cart">
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_cart-eed150.svg"
+                    alt="Cart" class="_1XmrCc nav_cart_icon" width="20" height="20">
+                <p class="nav_cart_text">Cart</p>
+            </div>
+            <div class="nav_bcmsellr">
+                <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/Store-9eeae2.svg"
+                    alt="Become a Seller" class="_1XmrCc nav_seller_icon">
+                <p class="nav_bcmslr_text">Become a Seller</p>
+            </div>
+            <img class="-dOa_b nav_dots"
+                src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/header_3verticalDots-ea7819.svg"
+                width="24" height="24" alt="Dropdown with more help links">
+
+        </div>
+
+        <!--this is collection box-->
+        <div class="collection_box">
+            <div class="collection_box1" id="collection_box1" onclick="mobiles()">
+                <img class="_2puWtW _3a3qyb mob_img" alt="Mobiles" width="65" height="65"
+                    src="https://rukminim1.flixcart.com/flap/80/80/image/22fddf3c7da4c4f4.png?q=100">
+                <center><button class="clb1_text">Mobiles</button></center>
+            </div>
+            <div class="collection_box2" id="collection_box2" onclick="collection()">
+                <img class="_2puWtW _3a3qyb fashion_img" alt="Fashion" width="65" height="65"
+                    src="https://rukminim1.flixcart.com/fk-p-flap/80/80/image/0d75b34f7d8fbcb3.png?q=100">
+                <center><button class="clb2_text">Fashion</button></center>
+            </div>
+            <div class="collection_box3" id="collection_box3" onclick="laptops()">
+                <img class="_2puWtW _3a3qyb elctrnics_img" alt="Electronics" width="65" height="65"
+                    src="https://rukminim1.flixcart.com/flap/80/80/image/69c6589653afdb9a.png?q=100">
+                <center><button class="clb3_text">Electronics</button></center>
+            </div>
+            <div class="collection_box4" id="collection_box4" onclick="furnitures()">
+                <img class="_2puWtW _3a3qyb furniture_img" alt="Home &amp; Furniture" width="65" height="65"
+                    src="https://rukminim1.flixcart.com/flap/80/80/image/ab7e2b022a4587dd.jpg?q=100">
+                <center><button class="clb4_text">Furniture</button></center>
+            </div>
+        </div>
+
+        <!--this is fashion collection-->
+        <div class="fashion_cllctn" id="fashion_cllctn">
+            <p class="fcllctn_text1" id="fcllctn_text1" onclick="mens()">Men</p>
+            <p class="fcllctn_text2" id="fcllctn_text2" onclick="womens()">Women</p>
+        </div>
+
+    </div>
+
+
+    <!--this is mobiles page-->
+    <div class="mobiles_page" id="mobiles_page">
+
+        <!--this is nav bar-->
+        <div class="mp_nav_bar" id="mp_nav_bar">
+            <div class="mp_logo_box">
+                <img class="mp_logo_img" src="flogo.png" alt="img">
+                <p class="mp_logo_text1">Explore</p>
+                <p class="mp_logo_text2">Plus</p>
+                <img class="mp_logo_plus_img" src="plus.png" alt="img">
+            </div>
+            <div class="mp_nav_srchbox">
+                <p class="mp_nav_srchbox_text">Search for products, brands and more</p>
+                <svg width="20" height="20" viewBox="0 0 17 18" class="mp_srch_icon" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#2874F1" fill-rule="evenodd">
+                        <path class="EwE-Fa"
+                            d="m11.618 9.897l4.225 4.212c.092.092.101.232.02.313l-1.465 1.46c-.081.081-.221.072-.314-.02l-4.216-4.203">
+                        </path>
+                        <path class="EwE-Fa"
+                            d="m6.486 10.901c-2.42 0-4.381-1.956-4.381-4.368 0-2.413 1.961-4.369 4.381-4.369 2.42 0 4.381 1.956 4.381 4.369 0 2.413-1.961 4.368-4.381 4.368m0-10.835c-3.582 0-6.486 2.895-6.486 6.467 0 3.572 2.904 6.467 6.486 6.467 3.582 0 6.486-2.895 6.486-6.467 0-3.572-2.904-6.467-6.486-6.467">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+            <div class="mp_nav_login">
+                <p class="mp_navl_tex">Login</p>
+            </div>
+            <div class="mp_nav_bcmsellr">
+                <p class="mp_nav_bcmslr_text">Become a Seller</p>
+            </div>
+            <div class="mp_nav_more">
+                <p class="mp_nav_more_text">More</p>
+            </div>
+            <div class="mp_nav_cart">
+                <svg class="GAbRIN cart_icon" width="16" height="16" viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path class="cziJ98"
+                        d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86"
+                        fill="#fff"></path>
+                </svg>
+                <p class="mp_nav_cart_text">Cart</p>
+            </div>
+
+        </div>
+
+        <!--this is mobile box-->
+        <div class="mobile_box" id="mobile_box">
+
+            <!--this is mobile box 1-->
+            <div class="mobile_box1" id="mobile_box1"
+                onclick="product_detail_page2('mobile_box','MOTOROLA Edge 60 Fusion 5G (PANTONE Amazonite, 256 GB)','22999','25999','11% off','4.6','3,640 Ratings & 280 Reviews','https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/j/x/j/-original-imahbfmdgpjvgecg.jpeg?q=70')">
+                <div class="mobile_box1_lside">
+                    <div class="mob1_img_box">
+                        <div class="bestseller">Bestseller</div>
+                        <img loading="eager" class="DByuf4 mob1_img"
+                            alt="MOTOROLA Edge 60 Fusion 5G (PANTONE Amazonite, 256 GB)"
+                            src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/j/x/j/-original-imahbfmdgpjvgecg.jpeg?q=70">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="N1bADF mob1_like_icon" width="16" height="16"
+                            viewBox="0 0 20 16">
+                            <path
+                                d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z"
+                                fill="#c8c8c8" class="x1UMqG" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path>
+                        </svg>
+                    </div>
+
+                    <div class="mob1_compare">
+                        <div class="mob1_tick_box"></div>
+                        <div class="mob1_compare_text">Add to compare</div>
+                    </div>
+
+                </div>
+                <div class="mobile_box1_rside">
+                    <p class="mob1_head">MOTOROLA Edge 60 Fusion 5G (PANTONE Amazonite, 256 GB)</p>
+                    <div class="mob1_rating_box">
+                        <div class="mob1_rstar">
+                            <div class="mob1_rstar_word">4.6</div>
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMiI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTYuNSA5LjQzOWwtMy42NzQgMi4yMy45NC00LjI2LTMuMjEtMi44ODMgNC4yNTQtLjQwNEw2LjUuMTEybDEuNjkgNC4wMSA0LjI1NC40MDQtMy4yMSAyLjg4Mi45NCA0LjI2eiIvPjwvc3ZnPg=="
+                                class="Rza2QY mob1_rstar_icon">
+                        </div>
+                        <div class="mob1_rwords">3,640 Ratings & 280 Reviews</div>
+                    </div>
+                    <div class="mob1_detail_box">
+                        <ul class="mob1_list">
+                            <li class="mob1_li1">8 GB RAM | 256 GB ROM | Expandable Upto 1 TB</li>
+                            <li class="mob1_li2">16.94 cm (6.67 inch) Display</li>
+                            <li class="mob1_li3">50MP + 13MP | 32MP Front Camera</li>
+                            <li class="mob1_li4">5500 mAh Battery</li>
+                            <li class="mob1_li5">Dimensity 7400 Processor</li>
+                            <li class="mob1_li6">68W Charger</li>
+                            <li class="mob1_li7">1 Year Warranty on Handset and 6 Months Warranty on Accessories</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile1_box_price">
+                    <div class="mob1_bp_b1">
+                        <div class="mob1_bp_b1_price">22999</div>
+                        <img height="21" src="faicon.png" class="mob1_bp_b1_ficon">
+                    </div>
+                    <div class="mob1_bp_dicsp">25999</div>
+                    <div class="mob1_bp_dics">11% off</div>
+                </div>
+
+            </div>
+
+            <!--this is mobile box 2-->
+            <div class="mobile_box2" id="mobile_box2"
+                onclick="product_detail_page2('mobile_box','MOTOROLA Edge 60 Fusion 5G (PANTONE Zephyr, 256 GB)','22999','25999','11% off','4.4','3,640 Ratings & 280 Reviews','https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/q/b/p/-original-imahbfmd2fapmg5r.jpeg?q=70')">
+                <div class="mobile_box2_lside">
+                    <div class="mob2_img_box">
+                        <img loading="eager" class="DByuf4 mob2_img"
+                            alt="MOTOROLA Edge 60 Fusion 5G (PANTONE Zephyr, 256 GB)"
+                            src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/q/b/p/-original-imahbfmd2fapmg5r.jpeg?q=70">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="N1bADF mob2_like_icon" width="16" height="16"
+                            viewBox="0 0 20 16">
+                            <path
+                                d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z"
+                                fill="#c8c8c8" class="x1UMqG" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path>
+                        </svg>
+                    </div>
+
+                    <div class="mob2_compare">
+                        <div class="mob2_tick_box"></div>
+                        <div class="mob2_compare_text">Add to compare</div>
+                    </div>
+
+                </div>
+                <div class="mobile_box2_rside">
+                    <p class="mob2_head">MOTOROLA Edge 60 Fusion 5G (PANTONE Zephyr, 256 GB)</p>
+                    <div class="mob2_rating_box">
+                        <div class="mob2_rstar">
+                            <div class="mob2_rstar_word">4.6</div>
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMiI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTYuNSA5LjQzOWwtMy42NzQgMi4yMy45NC00LjI2LTMuMjEtMi44ODMgNC4yNTQtLjQwNEw2LjUuMTEybDEuNjkgNC4wMSA0LjI1NC40MDQtMy4yMSAyLjg4Mi45NCA0LjI2eiIvPjwvc3ZnPg=="
+                                class="Rza2QY mob2_rstar_icon">
+                        </div>
+                        <div class="mob2_rwords">3,640 Ratings & 280 Reviews</div>
+                    </div>
+                    <div class="mob2_detail_box">
+                        <ul class="mob2_list">
+                            <li class="mob2_li1">8 GB RAM | 256 GB ROM | Expandable Upto 1 TB</li>
+                            <li class="mob2_li2">16.94 cm (6.67 inch) Display</li>
+                            <li class="mob2_li3">50MP + 13MP | 32MP Front Camera</li>
+                            <li class="mob2_li4">5500 mAh Battery</li>
+                            <li class="mob2_li5">Dimensity 7400 Processor</li>
+                            <li class="mob2_li6">68W Charger</li>
+                            <li class="mob2_li7">1 Year Warranty on Handset and 6 Months Warranty on Accessories</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile2_box_price">
+                    <div class="mob2_bp_b1">
+                        <div class="mob2_bp_b1_price">22999</div>
+                        <img height="21" src="faicon.png" class="mob2_bp_b1_ficon">
+                    </div>
+                    <div class="mob2_bp_dicsp">25999</div>
+                    <div class="mob2_bp_dics">11% off</div>
+                </div>
+
+            </div>
+
+            <!--this is mobile box 3-->
+            <div class="mobile_box3" id="mobile_box3"
+                onclick="product_detail_page2('mobile_box','MOTOROLA Edge 60 Fusion 5G (PANTONE Slipstream, 256 GB','22999','25999','11% off','4.6','3,640 Ratings & 280 Reviews','https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/r/i/c/-original-imahbfmdzukyctut.jpeg?q=70')">
+                <div class="mobile_box3_lside">
+                    <div class="mob3_img_box">
+                        <div class="bestseller">Bestseller</div>
+                        <img loading="eager" class="DByuf4 mob3_img"
+                            alt="MOTOROLA Edge 60 Fusion 5G (PANTONE Slipstream, 256 GB)"
+                            src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/r/i/c/-original-imahbfmdzukyctut.jpeg?q=70">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="N1bADF mob3_like_icon" width="16" height="16"
+                            viewBox="0 0 20 16">
+                            <path
+                                d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z"
+                                fill="#c8c8c8" class="x1UMqG" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path>
+                        </svg>
+                    </div>
+
+                    <div class="mob3_compare">
+                        <div class="mob3_tick_box"></div>
+                        <div class="mob3_compare_text">Add to compare</div>
+                    </div>
+
+                </div>
+                <div class="mobile_box3_rside">
+                    <p class="mob3_head">MOTOROLA Edge 60 Fusion 5G (PANTONE Slipstream, 256 GB)</p>
+                    <div class="mob3_rating_box">
+                        <div class="mob3_rstar">
+                            <div class="mob3_rstar_word">4.6</div>
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMiI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTYuNSA5LjQzOWwtMy42NzQgMi4yMy45NC00LjI2LTMuMjEtMi44ODMgNC4yNTQtLjQwNEw2LjUuMTEybDEuNjkgNC4wMSA0LjI1NC40MDQtMy4yMSAyLjg4Mi45NCA0LjI2eiIvPjwvc3ZnPg=="
+                                class="Rza2QY mob2_rstar_icon">
+                        </div>
+                        <div class="mob3_rwords">3,640 Ratings & 280 Reviews</div>
+                    </div>
+                    <div class="mob3_detail_box">
+                        <ul class="mob3_list">
+                            <li class="mob3_li1">8 GB RAM | 256 GB ROM | Expandable Upto 1 TB</li>
+                            <li class="mob3_li2">16.94 cm (6.67 inch) Display</li>
+                            <li class="mob3_li3">50MP + 13MP | 32MP Front Camera</li>
+                            <li class="mob3_li4">5500 mAh Battery</li>
+                            <li class="mob3_li5">Dimensity 7400 Processor</li>
+                            <li class="mob3_li6">68W Charger</li>
+                            <li class="mob3_li7">1 Year Warranty on Handset and 6 Months Warranty on Accessories</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mobile3_box_price">
+                    <div class="mob3_bp_b1">
+                        <div class="mob3_bp_b1_price">22999</div>
+                        <img height="21" src="faicon.png" class="mob3_bp_b1_ficon">
+                    </div>
+                    <div class="mob3_bp_dicsp">25999</div>
+                    <div class="mob3_bp_dics">11% off</div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!--this is Mens bottomwear page-->
+
+        <!--this is Mens bottomwear box-->
+        <div class="mbottomwear_box" id="mbottomwear_box">
+
+            <div class="mbwear_box1" id="mbwear_box1"
+                onclick="product_detail_page2('mbottomwear_box','Men Slim Fit Khaki Lycra Blend Trousers','299','1499','81% off','4.0','4000 ratings and 400 reviews','https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/a/s/q/30-pic-pt190e045-indiclub-original-imagtyu5p2tedyrj.jpeg?q=70')">
+                <div class="hot_deal">Hot Deal</div>
+                <div class="mbw_b1_imgbox">
+                    <img class="_53J4C mbw_b1_img" id="mbw_b1_img" alt=""
+                        src="https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/a/s/q/30-pic-pt190e045-indiclub-original-imagtyu5p2tedyrj.jpeg?q=70">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="N1bADF mbw_b1_heart" width="28" height="28"
+                        viewBox="0 0 20 16">
+                        <path
+                            d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z"
+                            fill="#cccccc" class="x1UMqG" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path>
+                    </svg>
+                </div>
+                <p class="mbw_b1_name">INDICLUB</p>
+                <p class="mbw_b1_details" id="mbw_b1_details_name">Men Slim Fit Khaki Lycra Blend Trousers</p>
+                <div class="mbw_b1_price">
+                    <div class="mbw_b1_total_price" id="mbw_b1_total_price">299</div>
+                    <div class="mbw_b1_dicnt_price" id="mbw_b1_dicnt_price">1499</div>
+                    <div class="mbw_b1_dicnt" id="mbw_b1_dicnt">81% off</div>
+                </div>
+            </div>
+
+            <div class="mbwear_box2" id="mbwear_box2"
+                onclick="product_detail_page2('mbottomwear_box','Men Slim Mid Rise Blue Jeans','1799','399','84% off','84% off','4000 ratings and 400 reviews','https://rukminim2.flixcart.com/image/612/612/xif0q/jean/1/b/i/30-lmjn003989-lee-original-imagrf58tmew7umu.jpeg?q=70')">
+                <div class="mbw_b2_imgbox">
+                    <img class="_53J4C- mbw_b2_img" alt=""
+                        src="https://rukminim2.flixcart.com/image/612/612/xif0q/jean/1/b/i/30-lmjn003989-lee-original-imagrf58tmew7umu.jpeg?q=70">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="N1bADF mbw_b2_heart" width="28" height="28"
+                        viewBox="0 0 20 16">
+                        <path
+                            d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z"
+                            fill="#cccccc" class="x1UMqG" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path>
+                    </svg>
+                </div>
+                <p class="mbw_b2_name">LEE</p>
+                <p class="mbw_b2_details">Men Slim Mid Rise Blue Jeans</p>
+                <div class="mbw_b2_price">
+                    <div class="mbw_b2_total_price">399</div>
+                    <div class="mbw_b2_dicnt_price">1799</div>
+                    <div class="mbw_b2_dicnt">84% off</div>
+                </div>
+            </div>
+
+            <div class="mbwear_box3" id="mbwear_box3"
+                onclick="product_detail_page2('mbottomwear_box','Men Relaxed Green Cotton Blend Trousers','713','1699','53% off','4.1','3500 ratings and 290 reviews','https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/r/2/b/36-31066397-glitchez-original-imahbzp96j82qpjy.jpeg?q=70')">
+                <div class="hot_deal">Hot Deal</div>
+                <div class="mbw_b3_imgbox">
+                    <img class="_53J4C- mbw_b3_img" id="mbw_b3_img" alt=""
+                        src="https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/r/2/b/36-31066397-glitchez-original-imahbzp96j82qpjy.jpeg?q=70">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="N1bADF mbw_b3_heart" width="28" height="28"
+                        viewBox="0 0 20 16">
+                        <path
+                            d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z"
+                            fill="#cccccc" class="x1UMqG" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path>
+                    </svg>
+                </div>
+                <p class="mbw_b3_name">glitchez</p>
+                <p class="mbw_b3_details">Men Relaxed Green Cotton Blend Trousers</p>
+                <div class="mbw_b3_price">
+                    <div class="mbw_b3_total_price">713</div>
+                    <div class="mbw_b3_dicnt_price">1699</div>
+                    <div class="mbw_b3_dicnt">53% off</div>
+                </div>
+            </div>
+
+            <div class="mbwear_box4" id="mbwear_box4"
+                onclick="product_detail_page2('mbottomwear_box','Men Loose Fit Mid Rise Light Blue Jeans','1925','3499','44% off','4.7','8000ratings and 899 reviews','https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/v/4/t/34-mft-17334-s-mufti-original-imahfhh2qhnugtwp.jpeg?q=70')">
+                <div class="mbw_b4_imgbox">
+                    <img class="_53J4C- mbw_b4_img" alt=""
+                        src="https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/v/4/t/34-mft-17334-s-mufti-original-imahfhh2qhnugtwp.jpeg?q=70">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="N1bADF mbw_b4_heart" width="28" height="28"
+                        viewBox="0 0 20 16">
+                        <path
+                            d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z"
+                            fill="#cccccc" class="x1UMqG" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path>
+                    </svg>
+                </div>
+                <p class="mbw_b4_name">MUFTI</p>
+                <p class="mbw_b4_details">Men Tapered Beige Cotton Blend Trousers</p>
+                <div class="mbw_b4_price">
+                    <div class="mbw_b4_total_price">3499</div>
+                    <div class="mbw_b4_dicnt_price">1925</div>
+                    <div class="mbw_b4_dicnt">44% off</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--this is Womens wear page-->
+
+        <!--this is Momens topwear box-->
+        <div class="wtopwear_box" id="wtopwear_box">
+
+            <div class="wtwear_box1" id="wtwear_box1"
+                onclick="product_detail_page2('wtopwear_box','Women Printed Pure Cotton Straight Kurta','274','1999','86% off','3.5','3000ratings and 199 reviews','https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/p/q/2/xl-222-empire-style-original-imah6mhzptxys5ry.jpeg?q=70')">
+                <div class="hot_deal">Hot Deal</div>
+                <div class="wtw_b1_imgbox">
+                    <img class="_53J4C- wtw_b1_img" alt=""
+                        src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/p/q/2/xl-222-empire-style-original-imah6mhzptxys5ry.jpeg?q=70">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="N1bADF wtw_b1_heart" width="28" height="28"
+                        viewBox="0 0 20 16">
+                        <path
+                            d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z"
+                            fill="#cccccc" class="x1UMqG" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path>
+                    </svg>
+                </div>
+                <p class="wtw_b1_name">EMPIRE STYLE</p>
+                <p class="wtw_b1_details">Women Printed Pure Cotton Straight Kurta</p>
+                <div class="wtw_b1_price">
+                    <div class="wtw_b1_total_price">274</div>
+                    <div class="wtw_b1_dicnt_price">1999</div>
+                    <div class="wtw_b1_dicnt">86% off</div>
+                </div>
+            </div>
+
+            <div class="wtwear_box2" id="wtwear_box2"
+                onclick="product_detail_page2('wtopwear_box','Women Printed Cotton Rayon Straight Kurta','279','1699','83% off','4.0','3000ratings and 199 reviews','https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/o/v/h/xs-jr-001-ridhyara-clothing-original-imah96s6wcrxjmc7.jpeg?q=70')">
+                <div class="wtw_b2_imgbox">
+                    <img class="_53J4C- wtw_b2_img" alt=""
+                        src="https://rukminim2.flixcart.com/image/612/612/xif0q/kurta/o/v/h/xs-jr-001-ridhyara-clothing-original-imah96s6wcrxjmc7.jpeg?q=70">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="N1bADF wtw_b2_heart" width="28" height="28"
+                        viewBox="0 0 20 16">
+                        <path
+                            d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z"
+                            fill="#cccccc" class="x1UMqG" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path>
+                    </svg>
+                </div>
+                <p class="wtw_b2_name">chhaya fashion</p>
+                <p class="wtw_b2_details">Women Printed Cotton Rayon Straight Kurta</p>
+                <div class="wtw_b2_price">
+                    <div class="wtw_b2_total_price">279</div>
+                    <div class="wtw_b2_dicnt_price">1699</div>
+                    <div class="wtw_b2_dicnt">83% off</div>
+                </div>
+            </div>
+
+            <div class="wtwear_box3" id="wtwear_box3"
+                onclick="product_detail_page2('wtopwear_box','Women Flared Multicolor Viscose Rayon Trousers','419','2199','73% 0ff','3.9','3500ratings and 199 reviews','https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/q/a/m/free-emz01958-emeros-original-imagnfk6mmjjnhgg.jpeg?q=70')">
+                <div class="hot_deal">Hot Deal</div>
+                <div class="wtw_b3_imgbox">
+                    <img class="_53J4C- wtw_b3_img" alt=""
+                        src="https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/q/a/m/free-emz01958-emeros-original-imagnfk6mmjjnhgg.jpeg?q=70">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="N1bADF wtw_b3_heart" width="28" height="28"
+                        viewBox="0 0 20 16">
+                        <path
+                            d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z"
+                            fill="#cccccc" class="x1UMqG" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path>
+                    </svg>
+                </div>
+                <p class="wtw_b3_name">DAEVISH K</p>
+                <p class="wtw_b3_details">Women Flared Multicolor Viscose Rayon Trousers</p>
+                <div class="wtw_b3_price">
+                    <div class="wtw_b3_total_price">491</div>
+                    <div class="wtw_b3_dicnt_price">2199</div>
+                    <div class="wtw_b3_dicnt">73% off</div>
+                </div>
+            </div>
+
+            <div class="wtwear_box4" id="wtwear_box4"
+                onclick="product_detail_page2('wtopwear_box','Women Cotton Rayon Kurta Palazzo Dupatta Set','491','2299','73%','4.0','3500ratings and 199 reviews','https://rukminim2.flixcart.com/image/612/612/xif0q/fabric/0/t/t/yes-2-2-m-unstitched-2-5-m-sc-black-flower-gbg-yashika-original-imah4hw9ynhfbzyc.jpeg?q=70')">
+                <div class="wtw_b4_imgbox">
+                    <img class="_53J4C- wtw_b4_img" alt=""
+                        src="https://rukminim2.flixcart.com/image/612/612/xif0q/fabric/0/t/t/yes-2-2-m-unstitched-2-5-m-sc-black-flower-gbg-yashika-original-imah4hw9ynhfbzyc.jpeg?q=70">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="N1bADF wtw_b4_heart" width="28" height="28"
+                        viewBox="0 0 20 16">
+                        <path
+                            d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z"
+                            fill="#cccccc" class="x1UMqG" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path>
+                    </svg>
+                </div>
+                <p class="wtw_b4_name">JSIMAR</p>
+                <p class="wtw_b4_details">Women Cotton Rayon Kurta Palazzo Dupatta Set</p>
+                <div class="wtw_b4_price">
+                    <div class="wtw_b4_total_price">491</div>
+                    <div class="wtw_b4_dicnt_price">2299</div>
+                    <div class="wtw_b4_dicnt">73% off</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--this is laptop box-->
+        <div class="laptop_box" id="laptop_box">
+
+            <!--this is laptop box 1-->
+            <div class="laptop_box1" id="laptop_box1"
+                onclick="product_detail_page2('laptop_box','Acer Aspire 3 Intel Celeron Dual Core','15999','32999','53% off','4.5','3500ratings and 199 reviews','https://rukminim2.flixcart.com/image/312/312/xif0q/computer/s/z/8/-original-imah9cfktyhywfhg.jpeg?q=70')">
+                <div class="laptop_box1_lside">
+                    <div class="lptp1_img_box">
+                        <div class="bestseller">Bestseller</div>
+                        <img loading="eager" class="DByuf4 lptp1_img"
+                            alt="Acer Aspire 3 Intel Celeron Dual Core - (8 GB/128 GB SSD/Windows 11 Home) A311-45 Thin and Light Lapto..."
+                            src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/s/z/8/-original-imah9cfktyhywfhg.jpeg?q=70">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="N1bADF lptp1_like_icon" width="16" height="16"
+                            viewBox="0 0 20 16">
+                            <path
+                                d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z"
+                                fill="#c8c8c8" class="x1UMqG" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path>
+                        </svg>
+                    </div>
+
+                    <div class="lptp1_compare">
+                        <div class="lptp1_tick_box"></div>
+                        <div class="lptp1_compare_text">Add to compare</div>
+                    </div>
+
+                </div>
+                <div class="lptp_box1_rside">
+                    <p class="lptp1_head">Acer Aspire 3 Intel Celeron Dual Core - (8 GB/128 GB SSD/Windows 11 Home)
+                        A311-45 Thin and Light Lapto...</p>
+                    <div class="lptp1_rating_box">
+                        <div class="lptp1_rstar">
+                            <div class="lptp1_rstar_word">3.8</div>
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMiI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTYuNSA5LjQzOWwtMy42NzQgMi4yMy45NC00LjI2LTMuMjEtMi44ODMgNC4yNTQtLjQwNEw2LjUuMTEybDEuNjkgNC4wMSA0LjI1NC40MDQtMy4yMSAyLjg4Mi45NCA0LjI2eiIvPjwvc3ZnPg=="
+                                class="Rza2QY lptp1_rstar_icon">
+                        </div>
+                        <div class="lptp1_rwords">656 Ratings & 91 Reviews</div>
+                    </div>
+                    <div class="lptp1_detail_box">
+                        <ul class="lptp1_list">
+                            <li class="lptp1_li1">Intel Celeron Dual Core Processor</li>
+                            <li class="lptp1_li2">8 GB DDR4 RAM</li>
+                            <li class="lptp1_li3">64 bit Windows 11 Home Operating System</li>
+                            <li class="lptp1_li4">128 GB SSD</li>
+                            <li class="lptp1_li5">29.46 cm (11.6 inch) Display</li>
+                            <li class="lptp1_li6">1 Year Warranty</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lptp1_box_price">
+                    <div class="lptp1_bp_b1">
+                        <div class="lptp1_bp_b1_price">15990</div>
+                        <img height="21" src="faicon.png" class="lptp1_bp_b1_ficon">
+                    </div>
+                    <div class="lptp1_bp_dicsp">32999</div>
+                    <div class="lptp1_bp_dics">51% off</div>
+                </div>
+
+            </div>
+
+            <!--this is laptop box 2-->
+            <div class="laptop_box2" id="laptop_box2"
+                onclick="product_detail_page2('laptop_box','SAMSUNG Galaxy Book4 Metal Intel Core i5 13th Gen 1335U','54990','82789','33% off','SAMSUNG Galaxy Book4 Metal Intel Core i5 13th Gen 1335U','3500ratings and 199 reviews','https://rukminim2.flixcart.com/image/312/312/xif0q/computer/3/g/m/-original-imah3xrqttkdbss4.jpeg?q=70')">
+                <div class="laptop_box2_lside">
+                    <div class="lptp2_img_box">
+                        <img loading="eager" class="DByuf4 lptp2_img"
+                            alt="SAMSUNG Galaxy Book4 Metal Intel Core i5 13th Gen 1335U - (16 GB/512 GB SSD/Windows 11 Home) NP750XGJ-..."
+                            src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/3/g/m/-original-imah3xrqttkdbss4.jpeg?q=70">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="N1bADF lptp2_like_icon" width="16" height="16"
+                            viewBox="0 0 20 16">
+                            <path
+                                d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z"
+                                fill="#c8c8c8" class="x1UMqG" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path>
+                        </svg>
+                    </div>
+
+                    <div class="lptp2_compare">
+                        <div class="lptp2_tick_box"></div>
+                        <div class="lptp2_compare_text">Add to compare</div>
+                    </div>
+
+                </div>
+                <div class="lptp_box2_rside">
+                    <p class="lptp2_head">SAMSUNG Galaxy Book4 Metal Intel Core i5 13th Gen 1335U - (16 GB/512 GB
+                        SSD/Windows 11 Home) NP750XGJ-...</p>
+                    <div class="lptp2_rating_box">
+                        <div class="lptp2_rstar">
+                            <div class="lptp2_rstar_word">4.5</div>
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMiI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTYuNSA5LjQzOWwtMy42NzQgMi4yMy45NC00LjI2LTMuMjEtMi44ODMgNC4yNTQtLjQwNEw2LjUuMTEybDEuNjkgNC4wMSA0LjI1NC40MDQtMy4yMSAyLjg4Mi45NCA0LjI2eiIvPjwvc3ZnPg=="
+                                class="Rza2QY lptp2_rstar_icon">
+                        </div>
+                        <div class="lptp2_rwords">6,139 Ratings & 538 Reviews</div>
+                    </div>
+                    <div class="lptp2_detail_box">
+                        <ul class="lptp2_list">
+                            <li class="lptp2_li1">Intel Core i5 Processor (13th Gen)</li>
+                            <li class="lptp2_li2">16 GB LPDDR4X RAM</li>
+                            <li class="lptp2_li3">Windows 11 Operating System</li>
+                            <li class="lptp2_li4">512 GB SSD</li>
+                            <li class="lptp2_li5">39.62 cm (15.6 Inch) Display</li>
+                            <li class="lptp2_li6">1 Year Manufacturer Warranty for Laptop and 6 Months for In-Box
+                                Accessories</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lptp2_box_price">
+                    <div class="lptp2_bp_b1">
+                        <div class="lptp2_bp_b1_price">54990</div>
+                        <img height="21" src="faicon.png" class="lptp2_bp_b1_ficon">
+                    </div>
+                    <div class="lptp2_bp_dicsp">82789</div>
+                    <div class="lptp2_bp_dics">33% off</div>
+                </div>
+
+            </div>
+
+            <!--this is laptop box 3-->
+            <div class="laptop_box3" id="laptop_box3"
+                onclick="product_detail_page2('laptop_box','MOTOROLA Edge 60 Fusion 5G','30790','45438','32% off','4.6','3,640 Ratings & 280 Reviews','https://rukminim2.flixcart.com/image/312/312/xif0q/computer/1/o/s/-original-imahbgw5bg8qrzsf.jpeg?q=70')">
+                <div class="laptop_box3_lside">
+                    <div class="lptp3_img_box">
+                        <div class="bestseller">Bestseller</div>
+                        <img loading="eager" class="DByuf4 lptp3_img"
+                            alt="HP 15s Backlit Keyboard AMD Ryzen 3 Quad Core 7320U - (8 GB/512 GB SSD/Windows 11 Home) 15-fc0026AU Th..."
+                            src="https://rukminim2.flixcart.com/image/312/312/xif0q/computer/1/o/s/-original-imahbgw5bg8qrzsf.jpeg?q=70">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="N1bADF lptp3_like_icon" width="16" height="16"
+                            viewBox="0 0 20 16">
+                            <path
+                                d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z"
+                                fill="#c8c8c8" class="x1UMqG" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path>
+                        </svg>
+                    </div>
+
+                    <div class="lptp3_compare">
+                        <div class="lptp3_tick_box"></div>
+                        <div class="lptp3_compare_text">Add to compare</div>
+                    </div>
+
+                </div>
+                <div class="lptp_box3_rside">
+                    <p class="lptp3_head">MOTOROLA Edge 60 Fusion 5G (PANTONE Slipstream, 256 GB)</p>
+                    <div class="lptp3_rating_box">
+                        <div class="lptp3_rstar">
+                            <div class="lptp3_rstar_word">4.6</div>
+                            <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMiI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTYuNSA5LjQzOWwtMy42NzQgMi4yMy45NC00LjI2LTMuMjEtMi44ODMgNC4yNTQtLjQwNEw2LjUuMTEybDEuNjkgNC4wMSA0LjI1NC40MDQtMy4yMSAyLjg4Mi45NCA0LjI2eiIvPjwvc3ZnPg=="
+                                class="Rza2QY lptp2_rstar_icon">
+                        </div>
+                        <div class="lptp3_rwords">3,640 Ratings & 280 Reviews</div>
+                    </div>
+                    <div class="lptp3_detail_box">
+                        <ul class="lptp3_list">
+                            <li class="lptp3_li1">8 GB RAM | 256 GB ROM | Expandable Upto 1 TB</li>
+                            <li class="lptp3_li2">16.94 cm (6.67 inch) Display</li>
+                            <li class="lptp3_li3">50MP + 13MP | 32MP Front Camera</li>
+                            <li class="lptp3_li4">5500 mAh Battery</li>
+                            <li class="lptp3_li5">Dimensity 7400 Processor</li>
+                            <li class="lptp3_li6">68W Charger</li>
+                            <li class="lptp3_li7">1 Year Warranty on Handset and 6 Months Warranty on Accessories</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lptp3_box_price">
+                    <div class="lptp3_bp_b1">
+                        <div class="lptp3_bp_b1_price">30790</div>
+                        <img height="21" src="faicon.png" class="lptp3_bp_b1_ficon">
+                    </div>
+                    <div class="lptp3_bp_dicsp">45438</div>
+                    <div class="lptp3_bp_dics">32% off</div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--this is furniture page-->
+
+        <!--this is furniture box-->
+        <div class="frntre_box" id="frntre_box">
+
+            <div class="frntre_box1" id="frntre_box1"
+                onclick="product_detail_page2('frntre_box','Jeevat 220 TC Cotton Single Jaipuri Prints Flat Bedshee...','274','1999','86% off','4.5','3,640 Ratings & 280 Reviews','https://rukminim2.flixcart.com/image/612/612/xif0q/bedsheet/k/i/s/singlebed-foolpan-green-1-singlebed-foolpan-green-flat-jeevat-original-imah3hgphndjrd24.jpeg?q=70')">
+                <div class="hot_deal">Hot Deal</div>
+                <div class="frntre_b1_imgbox">
+                    <img loading="eager" class="DByuf4 frntre_b1_img"
+                        alt="Jeevat 220 TC Cotton Single Jaipuri Prints Flat Bedsheet"
+                        src="https://rukminim2.flixcart.com/image/612/612/xif0q/bedsheet/k/i/s/singlebed-foolpan-green-1-singlebed-foolpan-green-flat-jeevat-original-imah3hgphndjrd24.jpeg?q=70">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="N1bADF frntre_b1_heart" width="16" height="16"
+                        viewBox="0 0 20 16">
+                        <path
+                            d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z"
+                            fill="#cccccc" class="x1UMqG" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path>
+                    </svg>
+                </div>
+                <p class="frntre_b1_details">Jeevat 220 TC Cotton Single Jaipuri Prints Flat Bedshee...</p>
+                <p class="frntre_b1_name">Pack of 1, Green</p>
+
+                <div class="frntre_rating_box">
+                    <div class="frntre_rstar">
+                        <div class="frntre_rstar_word">4</div>
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMiI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTYuNSA5LjQzOWwtMy42NzQgMi4yMy45NC00LjI2LTMuMjEtMi44ODMgNC4yNTQtLjQwNEw2LjUuMTEybDEuNjkgNC4wMSA0LjI1NC40MDQtMy4yMSAyLjg4Mi45NCA0LjI2eiIvPjwvc3ZnPg=="
+                            class="Rza2QY frntre_rstar_icon">
+                    </div>
+                    <div class="frntre_rwords">(15,129)</div>
+                </div>
+
+                <div class="frntre_b1_price">
+                    <div class="frntre_b1_total_price">274</div>
+                    <div class="frntre_b1_dicnt_price">1999</div>
+                    <div class="frntre_b1_dicnt">86% off</div>
+                </div>
+            </div>
+
+            <div class="frntre_box2" id="frntre_box2"
+                onclick="product_detail_page2('frntre_box','Cosito 144 TC Cotton Double Jaipuri Prints Flat Bedshee...','279','1699','83% off','4.0','3,640 Ratings & 280 Reviews','https://rukminim2.flixcart.com/image/612/612/xif0q/bedsheet/h/e/l/guldastaa-1-guldastaa-red-flat-cosito-original-imahawrkh8ubxgnw.jpeg?q=70')">
+                <div class="frntre_b2_imgbox">
+                    <img loading="eager" class="DByuf4 frntre_b2_img"
+                        alt="Cosito 144 TC Cotton Double Jaipuri Prints Flat Bedsheet"
+                        src="https://rukminim2.flixcart.com/image/612/612/xif0q/bedsheet/h/e/l/guldastaa-1-guldastaa-red-flat-cosito-original-imahawrkh8ubxgnw.jpeg?q=70">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="N1bADF frntre_b2_heart" width="16" height="16"
+                        viewBox="0 0 20 16">
+                        <path
+                            d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z"
+                            fill="#cccccc" class="x1UMqG" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path>
+                    </svg>
+                </div>
+                <p class="frntre_b2_details">Cosito 144 TC Cotton Double Jaipuri Prints Flat Bedshee...</p>
+                <p class="frntre_b2_name">Pack of 1, beige</p>
+
+                <div class="frntre_rating_box">
+                    <div class="frntre_rstar">
+                        <div class="frntre_rstar_word">4.6</div>
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMiI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTYuNSA5LjQzOWwtMy42NzQgMi4yMy45NC00LjI2LTMuMjEtMi44ODMgNC4yNTQtLjQwNEw2LjUuMTEybDEuNjkgNC4wMSA0LjI1NC40MDQtMy4yMSAyLjg4Mi45NCA0LjI2eiIvPjwvc3ZnPg=="
+                            class="Rza2QY frntre_rstar_icon">
+                    </div>
+                    <div class="frntre_rwords">(77,129)</div>
+                </div>
+
+                <div class="frntre_b2_price">
+                    <div class="frntre_b2_total_price">279</div>
+                    <div class="frntre_b2_dicnt_price">1699</div>
+                    <div class="frntre_b2_dicnt">83% off</div>
+                </div>
+            </div>
+
+            <div class="frntre_box3" id="frntre_box3"
+                onclick="product_detail_page2('frntre_box','AVINYA 210 TC Cotton King Floral Fitted (Elastic) Bedsh...','269','1999','86% off','3.9','3,640 Ratings & 280 Reviews','https://rukminim2.flixcart.com/image/612/612/xif0q/bedsheet/l/2/b/rj-single-beji-214-48x72-elastic-fitted-bedsheet-fitted-elastic-original-imahbj9sygyfuuxq.jpeg?q=70')">
+                <div class="hot_deal">Hot Deal</div>
+                <div class="frntre_b3_imgbox">
+                    <img loading="eager" class="DByuf4 frntre_b3_img"
+                        alt="AVINYA 210 TC Cotton King Floral Fitted (Elastic) Bedsheet"
+                        src="https://rukminim2.flixcart.com/image/612/612/xif0q/bedsheet/l/2/b/rj-single-beji-214-48x72-elastic-fitted-bedsheet-fitted-elastic-original-imahbj9sygyfuuxq.jpeg?q=70">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="N1bADF frntre_b3_heart" width="16" height="16"
+                        viewBox="0 0 20 16">
+                        <path
+                            d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z"
+                            fill="#cccccc" class="x1UMqG" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path>
+                    </svg>
+                </div>
+                <p class="frntre_b3_details">AVINYA 210 TC Cotton King Floral Fitted (Elastic) Bedsh...</p>
+                <p class="frntre_b3_name">Pack of 1, red</p>
+
+                <div class="frntre_rating_box">
+                    <div class="frntre_rstar">
+                        <div class="frntre_rstar_word">3.9</div>
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMiI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTYuNSA5LjQzOWwtMy42NzQgMi4yMy45NC00LjI2LTMuMjEtMi44ODMgNC4yNTQtLjQwNEw2LjUuMTEybDEuNjkgNC4wMSA0LjI1NC40MDQtMy4yMSAyLjg4Mi45NCA0LjI2eiIvPjwvc3ZnPg=="
+                            class="Rza2QY frntre_rstar_icon">
+                    </div>
+                    <div class="frntre_rwords">(1,18,100)</div>
+                </div>
+
+                <div class="frntre_b3_price">
+                    <div class="frntre_b3_total_price">269</div>
+                    <div class="frntre_b3_dicnt_price">1999</div>
+                    <div class="frntre_b3_dicnt">86% off</div>
+                </div>
+            </div>
+
+            <div class="frntre_box4" id="frntre_box4"
+                onclick="product_detail_page2('frntre_box','Women Printed Viscose Rayon Straight Kurta','310','1299','76% off','3.6','5,640 Ratings & 480 Reviews','https://rukminim2.flixcart.com/image/612/612/jk76j680/bedsheet/x/k/g/3d-blackpunkh-3d-blackpunkh-flat-panipat-textile-hub-original-imaf7hetdjf43ywh.jpeg?q=70')">
+                <div class="frntre_b4_imgbox">
+                    <img loading="eager" class="DByuf4 frntre_b4_img"
+                        alt="Panipat Textile Hub 140 TC Microfiber Double Printed Flat Bedsheet"
+                        src="https://rukminim2.flixcart.com/image/612/612/jk76j680/bedsheet/x/k/g/3d-blackpunkh-3d-blackpunkh-flat-panipat-textile-hub-original-imaf7hetdjf43ywh.jpeg?q=70">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="N1bADF frntre_b4_heart" width="16" height="16"
+                        viewBox="0 0 20 16">
+                        <path
+                            d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z"
+                            fill="#cccccc" class="x1UMqG" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path>
+                    </svg>
+                </div>
+                <p class="frntre_b4_details">Women Printed Viscose Rayon Straight Kurta</p>
+                <p class="frntre_b4_name">Pack of 1, blue</p>
+
+                <div class="frntre_rating_box">
+                    <div class="frntre_rstar">
+                        <div class="frntre_rstar_word">3.6</div>
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMiI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTYuNSA5LjQzOWwtMy42NzQgMi4yMy45NC00LjI2LTMuMjEtMi44ODMgNC4yNTQtLjQwNEw2LjUuMTEybDEuNjkgNC4wMSA0LjI1NC40MDQtMy4yMSAyLjg4Mi45NCA0LjI2eiIvPjwvc3ZnPg=="
+                            class="Rza2QY frntre_rstar_icon">
+                    </div>
+                    <div class="frntre_rwords">(31,029)</div>
+                </div>
+
+                <div class="frntre_b4_price">
+                    <div class="frntre_b4_total_price">310</div>
+                    <div class="frntre_b4_dicnt_price">1299</div>
+                    <div class="frntre_b4_dicnt">76% off</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile page 2-->
+
+        <div class="mobile_page2" id="mobile_page2">
+            <!--this is left side of mobile page 2-->
+            <div class="mobp2_ls">
+                <div class="mobp2_ls_heart_crcle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="N1bADF mobp2_ls_heart" width="16" height="16"
+                        viewBox="0 0 20 16">
+                        <path
+                            d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z"
+                            fill="#c8c8c8" class="x1UMqG" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path>
+                    </svg>
+                </div>
+                <img loading="eager" class="DByuf4 IZexXJ jLEJ7H mobp2_ls_img" id="mobp2_ls_img"
+                    alt="MOTOROLA Edge 60 Fusion 5G (PANTONE Amazonite, 256 GB)" src="" fetchpriority="high">
+            </div>
+
+            <!--this is right side of mobile page 2-->
+            <div class="mobp2_rs">
+                <div class="mobp2_rs_name" id="mobp2_rs_name">MOTOROLA Edge 60 Fusion 5G (PANTONE Amazonite, 256
+                    GB)&nbsp;&nbsp;(8 GB RAM)</div>
+                <div class="mobp2_rs_rbox">
+                    <div class="mobp2_rs_line2_rstar">
+                        <div class="mobp2_rs_line2_word" id="mobp2_rs_line2_word">3.6</div>
+                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMiI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTYuNSA5LjQzOWwtMy42NzQgMi4yMy45NC00LjI2LTMuMjEtMi44ODMgNC4yNTQtLjQwNEw2LjUuMTEybDEuNjkgNC4wMSA0LjI1NC40MDQtMy4yMSAyLjg4Mi45NCA0LjI2eiIvPjwvc3ZnPg=="
+                            class="Rza2QY mobp2_rs_line2_icon">
+                    </div>
+                    <div class="mobp2_rs_line2_rwords" id="mobp2_rs_line2_rwords">6,842 Ratings & 452 Reviews</div>
+                    <img height="21" src="faicon.png" class="mobp2_rs_line2_faicon">
+                </div>
+                <div class="mobp2_rs_line3">Extra 3000 off</div>
+                <div class="mobp2_rs_line4">
+                    <div class="mobp2_rs_line4_wrd1" id="mobp2_rs_line4_wrd1_total_price"></div>
+                    <div class="mobp2_rs_line4_wrd2" id="mobp2_rs_line4_wrd2_dicnt_price"></div>
+                    <div class="mobp2_rs_line4_wrd3" id="mobp2_rs_line4_wrd3_dicnt"></div>
+                </div>
+
+                <div class="mobp2_rs_line5">
+                    <div class="mobp2_rs_line5_heading">Details</div>
+                    <ul class="mobp2_rs_line5_heading_lists">
+                        <li class="mobp2_rs_line5_li1">8 GB RAM | 256 GB ROM | Expandable Upto 1 TB</li>
+                        <li class="mobp2_rs_line5_li1">16.94 cm (6.67 inch) Display</li>
+                        <li class="mobp2_rs_line5_li1">50MP + 13MP | 32MP Front Camera</li>
+                        <li class="mobp2_rs_line5_li1">5500 mAh Battery</li>
+                        <li class="mobp2_rs_line5_li1">Dimensity 7400 Processor</li>
+                        <li class="mobp2_rs_line5_li1">68W Charger</li>
+                    </ul>
+                </div>
+                <div class="mobp2_rs_line6">
+                    <div class="mobp2_rs_line6_heading">Description</div>
+                    <p class="mobp2_rs_line6_para">The 17.018 cm (6.7) pOLED display delivers sharper detail and less
+                        pixelation. With a 1.5K 100% True All-Curved Display, Pantone Validation, and a Segment's best
+                        96.3% screen-to-body ratio, every visual feels immersive and lifelike. Enjoy 4500 nits peak
+                        brightness— ensuring clarity even in direct sunlight. The 120Hz refresh rate delivers
+                        ultra-smooth visuals, while Smart Water Touch 3.0 enhances touch accuracy. Built for durability,
+                        the display is protected by Gorilla Glass 7i and SGS Eye Protection for a comfortable viewing
+                        experience.</p>
+                </div>
+            </div>
+
+            <div class="button_box">
+                <div class="add_to_cart" id="add_to_cart"
+                    onclick="cart('mobile_page2','mobp2_rs_name','mobp2_rs_line4_wrd1_total_price','mobp2_rs_line4_wrd2_dicnt_price','mobp2_rs_line4_wrd3_dicnt','mobp2_ls_img')">
+
+                    <svg class="NwyjNT " width="16" height="16" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg">
+                        <path class=""
+                            d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86"
+                            fill="#fff"></path>
+                    </svg>
+                    Add to cart
+                </div>
+                <div class="buy_now">Buy now</div>
+            </div>
+        </div>
+
+        <!--add to cart page-->
+
+        <div class="add_to_cart_page" id="add_to_cart_page">
+            <div class="atc_leftside_box">
+                <div class="atc_lf_address_box">
+                    <div class="atc_lf_adrs_wrd1">From Saved Addresses</div>
+                    <div class="atc_lf_adrs_wrd2">Enter Delivery Pincode</div>
+                </div>
+                <div class="atc_lf_cartprdct_box">
+                    <div class="atc_lf_cb1">
+                        <div class="atc_lf_cb1_leftside">
+                            <img loading="lazy" class="DByuf4 atc_lf_cb1_ls_img" id="atc_lf_cb1_ls_img" alt=""
+                                src="https://rukminim2.flixcart.com/image/224/224/xif0q/bedsheet/x/a/x/gold-double-bedsheet-1-doublegold-3724-flat-vas-collections-original-imahyf6wdxsxgazw.jpeg?q=90">
+                        </div>
+                        <div class="atc_lf_cb1_rightside">
+                            <div class="atc_lf_cb1_rs_pname" id="atc_lf_cb1_rs_pname">VAS COLLECTIONS 160 TC Cotton
+                                Double Floral Flat Be...
+                            </div>
+                            <div class="atc_lf_cb1_rs_pnum">Pack of 1, Pink</div>
+                            <div class="atc_lf_cb1_rs_sellername">Seller:VAS COLLECTIONS <img src="faicon.png"
+                                    class="atc_lf_cb1_rs_sm_img" alt=""></div>
+                            <div class="atc_lf_cb1_rs_price">
+                                <div class="atc_lf_cb1_rs_lessprice" id="atc_lf_cb1_rs_lessprice">999</div>
+                                <div class="atc_lf_cb1_rs_discountprice" id="atc_lf_cb1_rs_discountprice">189</div>
+                                <div class="atc_lf_cb1_rs_discount" id="atc_lf_cb1_rs_discount">84% Off &nbsp; 1 offer
+                                    available <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg"
+                                        class="V7YGsc atc_lf_cb1_rs_discount_sign">
+                                        <g fill="none">
+                                            <path d="M-1-1h16v16H-1"></path>
+                                            <path
+                                                d="M7 0C3.136 0 0 3.136 0 7s3.136 7 7 7 7-3.136 7-7-3.136-7-7-7zm.7 10.5H6.3V6.3h1.4v4.2zm0-5.6H6.3V3.5h1.4v1.4z"
+                                                fill="#388e3c" class=""></path>
+                                        </g>
+                                    </svg> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="atc_lf_cb2">
+                        <div class="atc_lf_cb2_dtime">Delivery by Sun may&nbsp;|&nbsp;</div>
+                        <div class="atc_lf_cb2_dlvrychrge">40&nbsp;</div>
+                        <div class="atc_lf_cb2_dlvryfree">Free</div>
+                    </div>
+                    <div class="atc_lf_cb3">
+                        <div class="atc_lf_cb3_box1" id="add_qty" onclick="add()">+</div>
+                        <div class="atc_lf_cb3_box2" id="atc_lf_cb3_box2">0</div>
+                        <div class="atc_lf_cb3_box3" id="less_qty" onclick="subtract()">-</div>
+                        <div class="atc_lf_cb3_word1">SAVE FOR LATER</div>
+                        <div class="atc_lf_cb3_word2">REMOVE</div>
+                    </div>
+                </div>
+                <div class="atc_lf_phbox">
+                    <div class="atc_lf_button" id="atc_lf_button" onclick="details()">PLACE ORDER</div>
+                </div>
+            </div>
+            <div class="atc_rightside_box">
+                <div class="atc_rb_pricedtls">
+                    PRICE DETAILS
+                </div>
+                <div class="atc_rb_price">
+                    <div class="atc_rb_price_wrd1">Price (1 item)</div>
+                    <div class="atc_rb_price_wrd2" id="atc_rb_price_wrd2">999</div>
+                </div>
+                <div class="atc_rb_discnt">
+                    <div class="atc_rb_discnt_wrd1">Discount</div>
+                    <div class="atc_rb_discnt_wrd2" id="atc_rb_discnt_wrd2">-770</div>
+                </div>
+                <div class="atc_rb_pltfrm_fee">
+                    <div class="atc_rb_pltfrm_fee_wrd1">Platform fees</div>
+                    <div class="atc_rb_pltfrm_fee_wrd2" id="atc_rb_pltfrm_fee_wrd2">3</div>
+                </div>
+                <div class="atc_rb_dlvry">
+                    <div class="atc_rb_dlvry_wrd1">Delivery charges</div>
+                    <div class="atc_rb_dlvry_wrd2" id="atc_rb_dlvry_wrd2">40</div>
+                    <div class="atc_rb_dlvry_wrd3">Free</div>
+                </div>
+                <div class="atc_rb_total_amnt">
+                    <div class="atc_rb_total_amnt_wrd1">Total amount</div>
+                    <div class="atc_rb_total_amnt_wrd2" id="atc_rb_total_amnt_wrd2">232</div>
+                </div>
+                <div class="atc_rb_saving">
+                    <div class="atc_rb_saving_wrd1">You will save&nbsp;</div>
+                    <div class="atc_rb_saving_wrd2" id="atc_rb_saving_wrd2">&nbsp;767</div>
+                    <div class="atc_rb_saving_wrd3"></div>&nbsp;on this order
+                </div>
+            </div>
+        </div>
+
+
+        <!--this is Product details page-->
+
+        <div class="product_details" id="product_details">
+            <div class="pd_heading">DETAILS</div>
+            <div class="pd_line1">
+                <div class="pd_line1_wrd1">NAME</div>
+                <input type="text" class="pd_line1_wrd2" id="pd_line1_wrd2" placeholder="">
+            </div>
+            <div class="pd_line2">
+                <div class="pd_line2_wrd1">ADDRESS</div>
+                <input type="text" class="pd_line2_wrd2" id="pd_line2_wrd2" placeholder="">
+            </div>
+            <div class="pd_line3">
+                <div class="pd_line3_wrd1">PINCODE</div>
+                <input type="text" class="pd_line3_wrd2" id="pd_line3_wrd2" placeholder="">
+            </div>
+            <div class="pd_line4">
+                <div class="pd_line4_wrd1">MOBILE NO.</div>
+                <input type="text" class="pd_line4_wrd2" id="pd_line4_wrd2" placeholder="">
+            </div>
+
+            <div class="pd_checkout_button" id="pd_checkout_button" onclick="invoice()">CHECKOUT</div>
+
+        </div>
+
+
+        <!--this is invoice page-->
+
+        <div class="invoice_page" id="invoice_page">
+            <div class="ip_heading">INVOICE</div>
+            <div class="ip_line1">
+                <div class="ip_line1_wrd1">1</div>
+                <div class="ip_line1_wrd2">NAME</div>
+                <div class="ip_line1_wrd3" id="ip_line1_wrd3"></div>
+            </div>
+            <div class="ip_line2">
+                <div class="ip_line2_wrd1">2</div>
+                <div class="ip_line2_wrd2">ITEM NAME</div>
+                <div class="ip_line2_wrd3" id="ip_line2_wrd3"></div>
+            </div>
+            <div class="ip_line3">
+                <div class="ip_line3_wrd1">3</div>
+                <div class="ip_line3_wrd2">ADDRESS</div>
+                <div class="ip_line3_wrd3" id="ip_line3_wrd3"></div>
+            </div>
+            <div class="ip_line4">
+                <div class="ip_line4_wrd1">4</div>
+                <div class="ip_line4_wrd2">PINCODE</div>
+                <div class="ip_line4_wrd3" id="ip_line4_wrd3"></div>
+            </div>
+            <div class="ip_line5">
+                <div class="ip_line5_wrd1">5</div>
+                <div class="ip_line5_wrd2">MOBILE NO.</div>
+                <div class="ip_line5_wrd3" id="ip_line5_wrd3"></div>
+            </div>
+            <div class="ip_line6">
+                <div class="ip_line6_wrd1">6</div>
+                <div class="ip_line6_wrd2">PRICE</div>
+                <div class="ip_line6_wrd3" id="ip_line6_wrd3"></div>
+            </div>
+            <div class="ip_line7">
+                <div class="ip_line7_wrd1">7</div>
+                <div class="ip_line7_wrd2">DISCOUNT</div>
+                <div class="ip_line7_wrd3" id="ip_line7_wrd3"></div>
+            </div>
+            <div class="ip_line8">
+                <div class="ip_line8_wrd1">8</div>
+                <div class="ip_line8_wrd2">TOTAL</div>
+                <div class="ip_line8_wrd3" id="ip_line8_wrd3"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        function collection() {
+            document.getElementById("fashion_cllctn").style.display = "block";
+        }
+
+        function mobiles() {
+            document.getElementById("index_page").style.display = "none";
+            document.getElementById("mobiles_page").style.display = "block";
+            document.getElementById("mp_nav_bar").style.display = "block";
+            document.getElementById("mobile_box").style.display = "block";
+        }
+
+        function mens() {
+            document.getElementById("index_page").style.display = "none";
+            document.getElementById("mobiles_page").style.display = "block";
+            document.getElementById("mp_nav_bar").style.display = "block";
+            document.getElementById("mbottomwear_box").style.display = "block";
+        }
+
+        function womens() {
+            document.getElementById("index_page").style.display = "none";
+            document.getElementById("mobiles_page").style.display = "block";
+            document.getElementById("mp_nav_bar").style.display = "block";
+            document.getElementById("wtopwear_box").style.display = "block";
+        }
+
+        function laptops() {
+            document.getElementById("index_page").style.display = "none";
+            document.getElementById("mobiles_page").style.display = "block";
+            document.getElementById("mp_nav_bar").style.display = "block";
+            document.getElementById("laptop_box").style.display = "block";
+        }
+
+        function furnitures() {
+            document.getElementById("index_page").style.display = "none";
+            document.getElementById("mobiles_page").style.display = "block";
+            document.getElementById("mp_nav_bar").style.display = "block";
+            document.getElementById("frntre_box").style.display = "block";
+        }
+
+        function product_detail_page2(pageid, pname, price, discount_price, discount, star_rating, rating, image) {
+
+            document.getElementById(pageid).style.display = "none";
+            document.getElementById("mobile_page2").style.display = "block";
+
+            document.getElementById("mobp2_ls_img").src = image;
+            document.getElementById("mobp2_rs_name").innerHTML = pname;
+            document.getElementById("mobp2_rs_line4_wrd1_total_price").innerHTML = price;
+            document.getElementById("mobp2_rs_line4_wrd2_dicnt_price").innerHTML = discount_price;
+            document.getElementById("mobp2_rs_line4_wrd3_dicnt").innerHTML = discount;
+            document.getElementById("mobp2_rs_line2_word").innerHTML = star_rating;
+            document.getElementById("mobp2_rs_line2_rwords").innerHTML = rating;
+
+            document.getElementById("atc_lf_cb1_ls_img").src = image;
+            document.getElementById("atc_lf_cb1_rs_pname").innerHTML = pname;
+            document.getElementById("atc_lf_cb1_rs_lessprice").innerHTML = discount_price;
+            document.getElementById("atc_lf_cb1_rs_discountprice").innerHTML = price;
+            document.getElementById("atc_lf_cb1_rs_discount").innerHTML = discount;
+
+
+            document.getElementById("atc_rb_price_wrd2").innerHTML = discount_price;
+            document.getElementById("atc_rb_discnt_wrd2").innerHTML = parseInt(discount_price - price);
+
+            var price = parseInt(document.getElementById("atc_rb_price_wrd2").innerHTML - document.getElementById("atc_rb_discnt_wrd2").innerHTML);
+            document.getElementById("atc_rb_total_amnt_wrd2").innerHTML = parseInt(price - 3);
+
+            document.getElementById("atc_rb_saving_wrd2").innerHTML = parseInt(document.getElementById("atc_rb_discnt_wrd2").innerHTML - document.getElementById("atc_rb_pltfrm_fee_wrd2").innerHTML)
+
+
+            document.getElementById("ip_line2_wrd3").innerHTML = pname;
+            document.getElementById("ip_line6_wrd3").innerHTML = discount_price;
+            document.getElementById("ip_line7_wrd3").innerHTML = parseInt(discount_price - price);
+            document.getElementById("ip_line8_wrd3").innerHTML = price;
+
+        }
+
+
+        function cart() {
+            document.getElementById("mobile_page2").style.display = "none";
+            document.getElementById("add_to_cart_page").style.display = "block";
+
+        }
+
+        /*this is add or less cart function*/
+        function add() {
+            var oldqty =  parseInt( document.getElementById("atc_lf_cb3_box2").innerHTML);
+           var  addqty = oldqty+1; 
+
+           document.getElementById("atc_lf_cb3_box2").innerHTML=addqty;
+
+        }
+
+        function subtract() {
+            var oldqty =  parseInt( document.getElementById("atc_lf_cb3_box2").innerHTML);
+           var  addqty = oldqty-1; 
+
+           document.getElementById("atc_lf_cb3_box2").innerHTML=addqty;
+        }
+
+        function details() {
+            document.getElementById("index_page").style.display = "none";
+            document.getElementById("mobiles_page").style.display = "block";
+            document.getElementById("mp_nav_bar").style.display = "block";
+            document.getElementById("add_to_cart_page").style.display = "none";
+            document.getElementById("product_details").style.display = "block";
+        }
+
+        function invoice() {
+            document.getElementById("index_page").style.display = "none";
+            document.getElementById("mobiles_page").style.display = "block";
+            document.getElementById("mp_nav_bar").style.display = "block";
+            document.getElementById("product_details").style.display = "none";
+            document.getElementById("invoice_page").style.display = "block";
+
+            
+            document.getElementById("ip_line1_wrd3").innerHTML = document.getElementById("pd_line1_wrd2").value;
+            document.getElementById("ip_line3_wrd3").innerHTML = document.getElementById("pd_line2_wrd2").value;
+            document.getElementById("ip_line4_wrd3").innerHTML = document.getElementById("pd_line3_wrd2").value;
+            document.getElementById("ip_line5_wrd3").innerHTML = document.getElementById("pd_line4_wrd2").value;
+        }
+
+
+    </script>
+
+</body>
+
+</html>

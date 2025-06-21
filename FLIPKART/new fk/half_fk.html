@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        /* mens bottomwear page 2*/
+        .mb_page2{
+            display: none;
+            float: left;
+            width: 85.45rem;
+            height: 600px;
+            margin: 10px 4.8rem 10px;
+            background-color: white;
+        }
+
+        /*this is left side of mens bottomwear page 2*/
+        .mbp2_ls{
+            float: left;
+            margin: 15px 25px 15px 15px;
+            outline: 1.5px solid #f1f2f4;
+            width: 528px;
+            height: 450px;
+        }
+        .mbp2_ls_heart_crcle{
+            position: absolute;
+            width: 34px;
+            height: 34px;
+            border-radius: 22px;
+            box-shadow: 0px 0px 2px 2.5px #f2f2f2;
+            margin: 15px 0px 0px 29.8rem;
+        }
+        .mbp2_ls_heart{
+            margin: 9px;
+        }
+        .mbp2_ls_img{
+            float: left;
+            margin: 17px 125px;
+            width: 277px;
+        }
+
+        /*this is right side of mobile page 2*/
+        .mbp2_rs{
+            float: left;
+            margin: 15px 0px 15px 15px;
+            width: 783px;
+            height: 465px;
+        }
+
+        .mbp2_rs_name1{
+            color: #949591;
+            margin: 0px 0px 5px 0px;
+        }
+        .mbp2_rs_line3{
+            float: left;
+            color: #388e3d;
+            margin: 10px 674px 10px 0px;
+            font-size: 13.5px;
+            font-weight: 600;
+        }
+        
+        .mbp2_rs_line4{
+            float: left;
+            margin: 0px 558px 0px 0px
+        }
+        .mbp2_rs_line4_wrd1{
+            float: left;
+            font-weight: 600;
+            font-size: 25px;
+        }
+        .mbp2_rs_line4_wrd2{
+            float: left;
+            text-decoration: line-through;
+            color: #8c8d8d;
+            margin: 6px 10px;
+        }
+        .mbp2_rs_line4_wrd3{
+            float: left;
+            color: #388e3d;
+            font-weight: 600;
+            margin: 6px 0px;
+        }
+
+        .mbp2_rs_line5{
+            float: left;
+            margin: 40px 337px 10px 0px;
+            outline: 1.5px solid #f1f2f4;
+            padding-left: 30px;
+            
+        }
+        .mbp2_rs_line5_heading{
+            float: left;
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0px 250px 25px -30px;
+            width: 100%;
+            height: 25px;
+            outline: 1.5px solid #f1f2f4;
+            padding: 25px 0px 25px 30px;
+        }
+        .mbp2_rs_line5_sub_heading{
+                float: left;
+            font-size: 16px;
+            width: 100%;
+            margin: 0px 0px 10px 0px;
+        }
+
+        .mbp2_rs_line5_list1, .mbp2_rs_line5_list2, .mbp2_rs_line5_list3, .mbp2_rs_line5_list4, .mbp2_rs_line5_list5, .mbp2_rs_line5_list6, .mbp2_rs_line5_list7, .mbp2_rs_line5_list8{
+            float: left;
+            font-size: 13px;
+            width: 377px;
+            margin: 10px 0px;
+        }
+        .mbp2_rs_line5_list1_w1, .mbp2_rs_line5_list2_w1, .mbp2_rs_line5_list3_w1, .mbp2_rs_line5_list4_w1, .mbp2_rs_line5_list5_w1, .mbp2_rs_line5_list6_w1, .mbp2_rs_line5_list7_w1, .mbp2_rs_line5_list8_w1{
+            float: left;
+            color: #949591;
+            font-weight: 600;
+            width: 150px;
+        }
+        .mbp2_rs_line5_list1_w2, .mbp2_rs_line5_list2_w2, .mbp2_rs_line5_list3_w2, .mbp2_rs_line5_list4_w2, .mbp2_rs_line5_list5_w2, .mbp2_rs_line5_list6_w2, .mbp2_rs_line5_list7_w2, .mbp2_rs_line5_list8_w2{
+            float: left;
+        }
+
+        .button_box{
+            position: absolute;
+            margin: 30rem 0px 0px 15px;
+            width: 528px;
+            height: 60px;
+        }
+        .add_to_cart{
+            float: left;
+            margin: 0px 10px 0px 0px;
+            width: 219px;
+            height: 21px;
+            background-color: #ff9f00;
+            border-radius: 2px;
+            text-align: center;
+            padding: 20px;
+            font-size: 19px;
+            font-weight: 600;
+            color: white;
+        }
+        .buy_now{
+            float: left;
+            width: 219px;
+            height: 21px;
+            background-color: #fb641b;
+            border-radius: 2px;
+            text-align: center;
+            padding: 20px;
+            font-size: 19px;
+            font-weight: 600;
+            color: white;
+        }
+
+
+        /*laptops collection page 2*/
+
+        .lptp_page2{
+            float: left;
+            width: 85.45rem;
+            height: 715px;
+            margin: 10px 4.8rem 10px;
+            background-color: white;
+        }
+
+        /*this is left side of laptop page 2*/
+        .lptp_p2_ls{
+            float: left;
+            margin: 15px 25px 15px 15px;
+            outline: 1.5px solid #f1f2f4;
+            width: 528px;
+            height: 450px;
+        }
+        .lptp_p2_ls_heart_crcle{
+            position: absolute;
+            width: 34px;
+            height: 34px;
+            border-radius: 22px;
+            box-shadow: 0px 0px 2px 2.5px #f2f2f2;
+            margin: 15px 0px 0px 29.8rem;
+        }
+        .lptp_p2_ls_heart{
+            margin: 9px;
+        }
+        .lptp_p2_ls_img{
+            float: left;
+            margin: 45px 51px;
+            width: 425px;
+        }
+
+        /*this is right side of laptop page 2*/
+        .lptp_p2_rs{
+            float: left;
+            margin: 15px 0px 15px 15px;
+            width: 783px;
+            height: 685px;
+        }
+
+        .lptp_p2_rs_name1{
+            color: #949591;
+            margin: 0px 0px 5px 0px;
+        }
+
+        .lptp_p2_rs_rbox{
+            float: left;
+            margin: 10px 433px 2px 0px;
+            width: 350px;
+            height: 18px;
+        }
+        .lptp_p2_rs_line2_rstar{
+            float: left;
+            background-color: #388e3d;
+            width: 39.5px;
+            height: 18px;
+            border-radius: 3px;
+            margin: 0px 10px 0px 0px ;
+            font-size: 12px;
+            font-weight: 600;
+            color: white;
+        }
+        .lptp_p2_rs_line2_word{
+            float: left;
+            
+            margin: 2px 2px 2px 5px;
+        }
+        .lptp_p2_rs_line2_icon{
+            float: left;
+            margin: 4px 1px 4px 1px;
+            width: 10px;
+        }
+        .lptp_p2_rs_line2_rwords{
+            float: left;
+            margin: 2px 0px 2px 0px;
+            font-size: 12.5px;
+            color: #949591;
+            font-weight: 600;
+        }
+        .lptp_p2_rs_line2_faicon{
+            margin: -3px 14px;
+        }
+
+        .lptp_p2_rs_line3{
+            float: left;
+            color: #388e3d;
+            margin: 10px 674px 10px 0px;
+            font-size: 13.5px;
+            font-weight: 600;
+        }
+        
+        .lptp_p2_rs_line4{
+            float: left;
+            margin: 0px 558px 0px 0px
+        }
+        .lptp_p2_rs_line4_wrd1{
+            float: left;
+            font-weight: 600;
+            font-size: 25px;
+        }
+        .lptp_p2_rs_line4_wrd2{
+            float: left;
+            text-decoration: line-through;
+            color: #8c8d8d;
+            margin: 6px 10px;
+        }
+        .lptp_p2_rs_line4_wrd3{
+            float: left;
+            color: #388e3d;
+            font-weight: 600;
+            margin: 6px 0px;
+        }
+
+        .lptp_p2_rs_line5{
+            float: left;
+            margin: 40px 337px 10px 0px;
+            outline: 1.5px solid #f1f2f4;
+            padding-left: 30px;
+            
+        }
+        .lptp_p2_rs_line5_heading{
+            float: left;
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0px 250px 25px -30px;
+            width: 100%;
+            height: 25px;
+            outline: 1.5px solid #f1f2f4;
+            padding: 25px 0px 25px 30px;
+
+        }
+        .lptp_p2_rs_line5_sub_heading{
+            float: left;
+            font-size: 16px;
+            width: 100%;
+            margin: 0px 0px 10px 0px;
+        }
+
+        .lptp_p2_rs_line5_list1, .lptp_p2_rs_line5_list2, .lptp_p2_rs_line5_list3, .lptp_p2_rs_line5_list4, .lptp_p2_rs_line5_list5, .lptp_p2_rs_line5_list6, .lptp_p2_rs_line5_list7, .lptp_p2_rs_line5_list8, .lptp_p2_rs_line5_list9, .lptp_p2_rs_line5_list10{
+            float: left;
+            font-size: 13px;
+            width: 377px;
+            margin: 10px 0px;
+        }
+        .lptp_p2_rs_line5_list1_w1, .lptp_p2_rs_line5_list2_w1, .lptp_p2_rs_line5_list3_w1, .lptp_p2_rs_line5_list4_w1, .lptp_p2_rs_line5_list5_w1, .lptp_p2_rs_line5_list6_w1, .lptp_p2_rs_line5_list7_w1, .lptp_p2_rs_line5_list8_w1, .lptp_p2_rs_line5_list9_w1, .lptp_p2_rs_line5_list10_w1{
+            float: left;
+            color: #949591;
+            font-weight: 600;
+            width: 150px;
+        }
+        .lptp_p2_rs_line5_list1_w2, .lptp_p2_rs_line5_list2_w2, .lptp_p2_rs_line5_list3_w2, .lptp_p2_rs_line5_list4_w2, .lptp_p2_rs_line5_list5_w2, .lptp_p2_rs_line5_list6_w2, .lptp_p2_rs_line5_list7_w2, .lptp_p2_rs_line5_list8_w2, .lptp_p2_rs_line5_list9_w2, .lptp_p2_rs_line5_list10_w2{
+            float: left;
+        }
+
+        .button_box{
+            position: absolute;
+            margin: 30rem 0px 0px 15px;
+            width: 528px;
+            height: 60px;
+        }
+        .add_to_cart{
+            float: left;
+            margin: 0px 10px 0px 0px;
+            width: 219px;
+            height: 21px;
+            background-color: #ff9f00;
+            border-radius: 2px;
+            text-align: center;
+            padding: 20px;
+            font-size: 19px;
+            font-weight: 600;
+            color: white;
+        }
+        .buy_now{
+            float: left;
+            width: 219px;
+            height: 21px;
+            background-color: #fb641b;
+            border-radius: 2px;
+            text-align: center;
+            padding: 20px;
+            font-size: 19px;
+            font-weight: 600;
+            color: white;
+        }
+
+
+
+        /*furniture collection page 2*/
+
+        .frntre_page2{
+            float: left;
+            width: 85.45rem;
+            height: 715px;
+            margin: 10px 4.8rem 10px;
+            background-color: white;
+        }
+
+        /*this is left side of furniture page 2*/
+        .frntre_p2_ls{
+            float: left;
+            margin: 15px 25px 15px 15px;
+            outline: 1.5px solid #f1f2f4;
+            width: 528px;
+            height: 450px;
+        }
+        .frntre_p2_ls_heart_crcle{
+            position: absolute;
+            width: 34px;
+            height: 34px;
+            border-radius: 22px;
+            box-shadow: 0px 0px 2px 2.5px #f2f2f2;
+            margin: 15px 0px 0px 29.8rem;
+        }
+        .frntre_p2_ls_heart{
+            margin: 9px;
+        }
+        .frntre_p2_ls_img{
+            float: left;
+            margin: 20px 59px;
+            width: 410px;
+        }
+
+        /*this is right side of furniture page 2*/
+        .frntre_p2_rs{
+            float: left;
+            margin: 15px 0px 15px 15px;
+            width: 783px;
+            height: 685px;
+        }
+
+        .frntre_p2_rs_name1{
+            color: #949591;
+            margin: 0px 0px 5px 0px;
+        }
+
+        .frntre_p2_rs_rbox{
+            float: left;
+            margin: 10px 433px 2px 0px;
+            width: 350px;
+            height: 18px;
+        }
+        .frntre_p2_rs_line2_rstar{
+            float: left;
+            background-color: #388e3d;
+            width: 39.5px;
+            height: 18px;
+            border-radius: 3px;
+            margin: 0px 10px 0px 0px ;
+            font-size: 12px;
+            font-weight: 600;
+            color: white;
+        }
+        .frntre_p2_rs_line2_word{
+            float: left;
+            
+            margin: 2px 2px 2px 5px;
+        }
+        .frntre_p2_rs_line2_icon{
+            float: left;
+            margin: 4px 1px 4px 1px;
+            width: 10px;
+        }
+        .frntre_p2_rs_line2_rwords{
+            float: left;
+            margin: 2px 0px 2px 0px;
+            font-size: 12.5px;
+            color: #949591;
+            font-weight: 600;
+        }
+        .frntre_p2_rs_line2_faicon{
+            margin: -3px 14px;
+        }
+
+        .frntre_p2_rs_line3{
+            float: left;
+            color: #388e3d;
+            margin: 10px 674px 10px 0px;
+            font-size: 13.5px;
+            font-weight: 600;
+        }
+        
+        .frntre_p2_rs_line4{
+            float: left;
+            margin: 0px 558px 0px 0px
+        }
+        .frntre_p2_rs_line4_wrd1{
+            float: left;
+            font-weight: 600;
+            font-size: 25px;
+        }
+        .frntre_p2_rs_line4_wrd2{
+            float: left;
+            text-decoration: line-through;
+            color: #8c8d8d;
+            margin: 6px 10px;
+        }
+        .frntre_p2_rs_line4_wrd3{
+            float: left;
+            color: #388e3d;
+            font-weight: 600;
+            margin: 6px 0px;
+        }
+
+        .frntre_p2_rs_line5{
+            float: left;
+            margin: 40px 337px 10px 0px;
+            outline: 1.5px solid #f1f2f4;
+            padding-left: 30px;
+            
+        }
+        .frntre_p2_rs_line5_heading{
+            float: left;
+            font-size: 22px;
+            font-weight: 600;
+            margin: 0px 250px 25px -30px;
+            width: 100%;
+            height: 25px;
+            outline: 1.5px solid #f1f2f4;
+            padding: 25px 0px 25px 30px;
+
+        }
+        .frntre_p2_rs_line5_sub_heading{
+            float: left;
+            font-size: 16px;
+            width: 100%;
+            margin: 0px 0px 10px 0px;
+        }
+
+        .frntre_p2_rs_line5_list1, .frntre_p2_rs_line5_list2, .frntre_p2_rs_line5_list3, .frntre_p2_rs_line5_list4, .frntre_p2_rs_line5_list5, .frntre_p2_rs_line5_list6, .frntre_p2_rs_line5_list7, .frntre_p2_rs_line5_list8, .frntre_p2_rs_line5_list9, .frntre_p2_rs_line5_list10{
+            float: left;
+            font-size: 13px;
+            width: 377px;
+            margin: 10px 0px;
+        }
+        .frntre_p2_rs_line5_list1_w1, .frntre_p2_rs_line5_list2_w1, .frntre_p2_rs_line5_list3_w1, .frntre_p2_rs_line5_list4_w1, .frntre_p2_rs_line5_list5_w1, .frntre_p2_rs_line5_list6_w1, .frntre_p2_rs_line5_list7_w1, .frntre_p2_rs_line5_list8_w1, .frntre_p2_rs_line5_list9_w1, .frntre_p2_rs_line5_list10_w1{
+            float: left;
+            color: #949591;
+            font-weight: 600;
+            width: 150px;
+        }
+        .frntre_p2_rs_line5_list1_w2, .frntre_p2_rs_line5_list2_w2, .frntre_p2_rs_line5_list3_w2, .frntre_p2_rs_line5_list4_w2, .frntre_p2_rs_line5_list5_w2, .frntre_p2_rs_line5_list6_w2, .frntre_p2_rs_line5_list7_w2, .frntre_p2_rs_line5_list8_w2, .frntre_p2_rs_line5_list9_w2, .frntre_p2_rs_line5_list10_w2{
+            float: left;
+        }
+
+        .button_box{
+            position: absolute;
+            margin: 30rem 0px 0px 15px;
+            width: 528px;
+            height: 60px;
+        }
+        .add_to_cart{
+            float: left;
+            margin: 0px 10px 0px 0px;
+            width: 219px;
+            height: 21px;
+            background-color: #ff9f00;
+            border-radius: 2px;
+            text-align: center;
+            padding: 20px;
+            font-size: 19px;
+            font-weight: 600;
+            color: white;
+        }
+        .buy_now{
+            float: left;
+            width: 219px;
+            height: 21px;
+            background-color: #fb641b;
+            border-radius: 2px;
+            text-align: center;
+            padding: 20px;
+            font-size: 19px;
+            font-weight: 600;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <!-- mens bottomwear collection page 2-->
+
+    <div class="mb_page2" id="mb_page2">
+        <!--this is left side of mens bottomwear page 2-->
+        <div class="mbp2_ls">
+            <div class="mbp2_ls_heart_crcle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="N1bADF mbp2_ls_heart" width="16" height="16" viewBox="0 0 20 16"><path d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z" fill="#c8c8c8" class="x1UMqG" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path></svg>
+            </div>
+            
+            <img class="_53J4C mbw_b1_img mbp2_ls_img" alt="" src="https://rukminim2.flixcart.com/image/612/612/xif0q/trouser/a/s/q/30-pic-pt190e045-indiclub-original-imagtyu5p2tedyrj.jpeg?q=70">
+        </div>
+
+        <!--this is right side of mens bottomwear page 2-->
+        <div class="mbp2_rs">
+            <div class="mbp2_rs_name1">mewan</div>
+            <div class="mbp2_rs_name2">Men Loose Fit Mid Rise Black Jeans</div>          
+            <div class="mbp2_rs_line3">Special price</div>
+            <div class="mbp2_rs_line4">
+                <div class="mbp2_rs_line4_wrd1">₹483</div>
+                <div class="mbp2_rs_line4_wrd2">₹2,499</div>
+                <div class="mbp2_rs_line4_wrd3">11% off</div>
+            </div>
+            
+            <div class="mbp2_rs_line5">
+                <div class="mbp2_rs_line5_heading">Product Details</div>
+                <div class="mbp2_rs_line5_sub_heading">General</div>
+                <div class="mbp2_rs_line5_list1">
+                    <div class="mbp2_rs_line5_list1_w1">Style Code</div>
+                    <div class="mbp2_rs_line5_list1_w2">33-Baggy-BKC-11</div>
+                </div>
+                <div class="mbp2_rs_line5_list2">
+                    <div class="mbp2_rs_line5_list2_w1">Ideal For</div>
+                    <div class="mbp2_rs_line5_list2_w2">Men</div>
+                </div>
+                <div class="mbp2_rs_line5_list3">
+                    <div class="mbp2_rs_line5_list3_w1">Suitable For</div>
+                    <div class="mbp2_rs_line5_list3_w2">Western Wear</div>
+                </div>
+                <div class="mbp2_rs_line5_list4">
+                    <div class="mbp2_rs_line5_list4_w1">Pack Of</div>
+                    <div class="mbp2_rs_line5_list4_w2">1</div>
+                </div>
+                <div class="mbp2_rs_line5_list5">
+                    <div class="mbp2_rs_line5_list5_w1">Pocket Type</div>
+                    <div class="mbp2_rs_line5_list5_w2">Coin Pocket, Curved Pocket</div>
+                </div>
+                <div class="mbp2_rs_line5_list6">
+                    <div class="mbp2_rs_line5_list6_w1">Pattern</div>
+                    <div class="mbp2_rs_line5_list6_w2">solid</div>
+                </div>
+                <div class="mbp2_rs_line5_list7">
+                    <div class="mbp2_rs_line5_list7_w1">Reversible</div>
+                    <div class="mbp2_rs_line5_list7_w2">No</div>
+                </div>
+                <div class="mbp2_rs_line5_list8">
+                    <div class="mbp2_rs_line5_list8_w1">Sales Package</div>
+                    <div class="mbp2_rs_line5_list8_w2">1</div>
+                </div>
+            </div>
+        </div>
+        <div class="button_box">
+            <div class="add_to_cart">
+                <svg class="NwyjNT " width="16" height="16" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg"><path class="" d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86" fill="#fff"></path></svg>
+                ADD TO CART</div>
+            <div class="buy_now">BUY NOW</div>
+        </div> 
+    </div>
+
+
+    <!-- laptops collection page 2-->
+
+    <div class="lptp_page2" id="lptp_page2">
+        <!--this is left side of mens bottomwear page 2-->
+        <div class="lptp_p2_ls">
+            <div class="lptp_p2_ls_heart_crcle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="N1bADF lptp_p2_ls_heart" width="16" height="16" viewBox="0 0 20 16"><path d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z" fill="#c8c8c8" class="x1UMqG" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path></svg>
+            </div>
+            <img loading="eager" class="DByuf4 IZexXJ jLEJ7H lptp_p2_ls_img" alt="Lenovo Lenovo V15 G3 IAP Intel Core i5 12th Gen 1235U - (16 GB/512 GB SSD/Windows 11 Home) 82TTA07RIH Thin and Light Laptop" src="https://rukminim2.flixcart.com/image/416/416/xif0q/computer/s/x/n/82tta07rih-thin-and-light-laptop-lenovo-original-imah7faabhq2pe3g.jpeg?q=70&amp;crop=false" fetchpriority="high" srcset="https://rukminim2.flixcart.com/image/832/832/xif0q/computer/s/x/n/82tta07rih-thin-and-light-laptop-lenovo-original-imah7faabhq2pe3g.jpeg?q=70&amp;crop=false 2x, https://rukminim2.flixcart.com/image/416/416/xif0q/computer/s/x/n/82tta07rih-thin-and-light-laptop-lenovo-original-imah7faabhq2pe3g.jpeg?q=70&amp;crop=false 1x">
+        </div>
+
+        <!--this is right side of mens bottomwear page 2-->
+        <div class="lptp_p2_rs">
+            <div class="lptp_p2_rs_name2">Lenovo Lenovo V15 G3 IAP Intel Core i5 12th Gen 1235U - (16 GB/512 GB SSD/Windows 11 Home) 82TTA07RIH Thin and Light Laptop</div>
+            <div class="lptp_p2_rs_rbox">
+                <div class="lptp_p2_rs_line2_rstar">
+                    <div class="lptp_p2_rs_line2_word">4</div>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMiI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTYuNSA5LjQzOWwtMy42NzQgMi4yMy45NC00LjI2LTMuMjEtMi44ODMgNC4yNTQtLjQwNEw2LjUuMTEybDEuNjkgNC4wMSA0LjI1NC40MDQtMy4yMSAyLjg4Mi45NCA0LjI2eiIvPjwvc3ZnPg=="
+                        class="Rza2QY lptp_p2_rs_line2_icon">
+                </div>
+                <div class="lptp_p2_rs_line2_rwords">142 Ratings & 14 Reviews</div>
+                <img height="21" src="faicon.png" class="lptp_p2_rs_line2_faicon">
+            </div>          
+            <div class="lptp_p2_rs_line3">Special price</div>
+            <div class="lptp_p2_rs_line4">
+                <div class="lptp_p2_rs_line4_wrd1">₹43,490</div>
+                <div class="lptp_p2_rs_line4_wrd2">₹92,014</div>
+                <div class="lptp_p2_rs_line4_wrd3">52% off</div>
+            </div>
+            
+            <div class="lptp_p2_rs_line5">
+                <div class="lptp_p2_rs_line5_heading">Specifications</div>
+                <div class="lptp_p2_rs_line5_sub_heading">General</div>
+                <div class="lptp_p2_rs_line5_list1">
+                    <div class="lptp_p2_rs_line5_list1_w1">Sales Package</div>
+                    <div class="lptp_p2_rs_line5_list1_w2">Laptop, User manual, Adapter</div>
+                </div>
+                <div class="lptp_p2_rs_line5_list2">
+                    <div class="lptp_p2_rs_line5_list2_w1">Model Number</div>
+                    <div class="lptp_p2_rs_line5_list2_w2">82TTA07RIH</div>
+                </div>
+                <div class="lptp_p2_rs_line5_list3">
+                    <div class="lptp_p2_rs_line5_list3_w1">Part Number</div>
+                    <div class="lptp_p2_rs_line5_list3_w2">82TTA07RIH</div>
+                </div>
+                <div class="lptp_p2_rs_line5_list4">
+                    <div class="lptp_p2_rs_line5_list4_w1">Model Name</div>
+                    <div class="lptp_p2_rs_line5_list4_w2">82TTA07RIH</div>
+                </div>
+                <div class="lptp_p2_rs_line5_list5">
+                    <div class="lptp_p2_rs_line5_list5_w1">Series</div>
+                    <div class="lptp_p2_rs_line5_list5_w2">Lenovo V15 G3 IAP</div>
+                </div>
+                <div class="lptp_p2_rs_line5_list6">
+                    <div class="lptp_p2_rs_line5_list6_w1">Color</div>
+                    <div class="lptp_p2_rs_line5_list6_w2">Iron Grey</div>
+                </div>
+                <div class="lptp_p2_rs_line5_list7">
+                    <div class="lptp_p2_rs_line5_list7_w1">Type</div>
+                    <div class="lptp_p2_rs_line5_list7_w2">Thin and Light Laptop</div>
+                </div>
+                <div class="lptp_p2_rs_line5_list8">
+                    <div class="lptp_p2_rs_line5_list8_w1">Suitable For</div>
+                    <div class="lptp_p2_rs_line5_list8_w2">Processing & Multitasking</div>
+                </div>
+                <div class="lptp_p2_rs_line5_list9">
+                    <div class="lptp_p2_rs_line5_list9_w1">Battery Backup</div>
+                    <div class="lptp_p2_rs_line5_list9_w2">Upto 5.3 Hours</div>
+                </div>
+                <div class="lptp_p2_rs_line5_list10">
+                    <div class="lptp_p2_rs_line5_list10_w1">MS Office Provided</div>
+                    <div class="lptp_p2_rs_line5_list10_w2">Yes</div>
+                </div>
+            </div>
+        </div>
+        <div class="button_box">
+            <div class="add_to_cart">
+                <svg class="NwyjNT " width="16" height="16" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg"><path class="" d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86" fill="#fff"></path></svg>
+                ADD TO CART</div>
+            <div class="buy_now">BUY NOW</div>
+        </div> 
+    </div>
+
+
+    
+    <!-- furniture collection page 2-->
+
+    <div class="frntre_page2" id="frntre_page2">
+        <!--this is left side of mens bottomwear page 2-->
+        <div class="frntre_p2_ls">
+            <div class="frntre_p2_ls_heart_crcle">
+            <svg xmlns="http://www.w3.org/2000/svg" class="N1bADF frntre_p2_ls_heart" width="16" height="16" viewBox="0 0 20 16"><path d="M8.695 16.682C4.06 12.382 1 9.536 1 6.065 1 3.219 3.178 1 5.95 1c1.566 0 3.069.746 4.05 1.915C10.981 1.745 12.484 1 14.05 1 16.822 1 19 3.22 19 6.065c0 3.471-3.06 6.316-7.695 10.617L10 17.897l-1.305-1.215z" fill="#c8c8c8" class="x1UMqG" stroke="#FFF" fill-rule="evenodd" opacity=".9"></path></svg>
+            </div>
+            <img loading="eager" class="DByuf4 IZexXJ jLEJ7H frntre_p2_ls_img" alt="VAS COLLECTIONS 144 TC Microfiber Double Abstract Flat Bedsheet" src="https://rukminim2.flixcart.com/image/416/416/kzllrbk0/bedsheet/k/g/k/designer-1-3745-silver-flat-vas-collections-original-imagbkuparjcjhx9.jpeg?q=70&amp;crop=false" fetchpriority="high" srcset="https://rukminim2.flixcart.com/image/832/832/kzllrbk0/bedsheet/k/g/k/designer-1-3745-silver-flat-vas-collections-original-imagbkuparjcjhx9.jpeg?q=70&amp;crop=false 2x, https://rukminim2.flixcart.com/image/416/416/kzllrbk0/bedsheet/k/g/k/designer-1-3745-silver-flat-vas-collections-original-imagbkuparjcjhx9.jpeg?q=70&amp;crop=false 1x">
+        </div>
+
+        <!--this is right side of mens bottomwear page 2-->
+        <div class="frntre_p2_rs">
+            <div class="frntre_p2_rs_name2">VAS COLLECTIONS 160 TC Cotton Double Floral Flat Bedsheet</div>
+            <div class="frntre_p2_rs_rbox">
+                <div class="frntre_p2_rs_line2_rstar">
+                    <div class="frntre_p2_rs_line2_word">4</div>
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMyIgaGVpZ2h0PSIxMiI+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTYuNSA5LjQzOWwtMy42NzQgMi4yMy45NC00LjI2LTMuMjEtMi44ODMgNC4yNTQtLjQwNEw2LjUuMTEybDEuNjkgNC4wMSA0LjI1NC40MDQtMy4yMSAyLjg4Mi45NCA0LjI2eiIvPjwvc3ZnPg=="
+                        class="Rza2QY frntre_p2_rs_line2_icon">
+                </div>
+                <div class="frntre_p2_rs_line2_rwords">142 Ratings & 14 Reviews</div>
+                <img height="21" src="faicon.png" class="frntre_p2_rs_line2_faicon">
+            </div>          
+            <div class="frntre_p2_rs_line3">Special price</div>
+            <div class="frntre_p2_rs_line4">
+                <div class="frntre_p2_rs_line4_wrd1">₹43,490</div>
+                <div class="frntre_p2_rs_line4_wrd2">₹92,014</div>
+                <div class="frntre_p2_rs_line4_wrd3">52% off</div>
+            </div>
+            
+            <div class="frntre_p2_rs_line5">
+                <div class="frntre_p2_rs_line5_heading">Specifications</div>
+                <div class="frntre_p2_rs_line5_sub_heading">General</div>
+                <div class="frntre_p2_rs_line5_list1">
+                    <div class="frntre_p2_rs_line5_list1_w1">Sales Package</div>
+                    <div class="frntre_p2_rs_line5_list1_w2">Laptop, User manual, Adapter</div>
+                </div>
+                <div class="frntre_p2_rs_line5_list2">
+                    <div class="frntre_p2_rs_line5_list2_w1">Model Number</div>
+                    <div class="frntre_p2_rs_line5_list2_w2">82TTA07RIH</div>
+                </div>
+                <div class="frntre_p2_rs_line5_list3">
+                    <div class="frntre_p2_rs_line5_list3_w1">Part Number</div>
+                    <div class="frntre_p2_rs_line5_list3_w2">82TTA07RIH</div>
+                </div>
+                <div class="frntre_p2_rs_line5_list4">
+                    <div class="frntre_p2_rs_line5_list4_w1">Model Name</div>
+                    <div class="frntre_p2_rs_line5_list4_w2">82TTA07RIH</div>
+                </div>
+                <div class="frntre_p2_rs_line5_list5">
+                    <div class="frntre_p2_rs_line5_list5_w1">Series</div>
+                    <div class="frntre_p2_rs_line5_list5_w2">Lenovo V15 G3 IAP</div>
+                </div>
+                <div class="frntre_p2_rs_line5_list6">
+                    <div class="frntre_p2_rs_line5_list6_w1">Color</div>
+                    <div class="frntre_p2_rs_line5_list6_w2">Iron Grey</div>
+                </div>
+                <div class="frntre_p2_rs_line5_list7">
+                    <div class="frntre_p2_rs_line5_list7_w1">Type</div>
+                    <div class="frntre_p2_rs_line5_list7_w2">Thin and Light Laptop</div>
+                </div>
+                <div class="frntre_p2_rs_line5_list8">
+                    <div class="frntre_p2_rs_line5_list8_w1">Suitable For</div>
+                    <div class="frntre_p2_rs_line5_list8_w2">Processing & Multitasking</div>
+                </div>
+                <div class="frntre_p2_rs_line5_list9">
+                    <div class="frntre_p2_rs_line5_list9_w1">Battery Backup</div>
+                    <div class="frntre_p2_rs_line5_list9_w2">Upto 5.3 Hours</div>
+                </div>
+                <div class="frntre_p2_rs_line5_list10">
+                    <div class="frntre_p2_rs_line5_list10_w1">MS Office Provided</div>
+                    <div class="frntre_p2_rs_line5_list10_w2">Yes</div>
+                </div>
+            </div>
+        </div>
+        <div class="button_box">
+            <div class="add_to_cart">
+                <svg class="NwyjNT " width="16" height="16" viewBox="0 0 16 15" xmlns="http://www.w3.org/2000/svg"><path class="" d="M15.32 2.405H4.887C3 2.405 2.46.805 2.46.805L2.257.21C2.208.085 2.083 0 1.946 0H.336C.1 0-.064.24.024.46l.644 1.945L3.11 9.767c.047.137.175.23.32.23h8.418l-.493 1.958H3.768l.002.003c-.017 0-.033-.003-.05-.003-1.06 0-1.92.86-1.92 1.92s.86 1.92 1.92 1.92c.99 0 1.805-.75 1.91-1.712l5.55.076c.12.922.91 1.636 1.867 1.636 1.04 0 1.885-.844 1.885-1.885 0-.866-.584-1.593-1.38-1.814l2.423-8.832c.12-.433-.206-.86-.655-.86" fill="#fff"></path></svg>
+                ADD TO CART</div>
+            <div class="buy_now">BUY NOW</div>
+        </div> 
+    </div>
+
+</body>
+</html>
